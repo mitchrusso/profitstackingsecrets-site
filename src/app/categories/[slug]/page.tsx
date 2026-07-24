@@ -1,0 +1,98 @@
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { ArrowLeft, ArrowRight, Check, SearchCheck } from "lucide-react";
+import { getCategoryBySlug, getOffersByCategory, offerCategories } from "@/lib/offers";
+import { absoluteUrl, jsonLd, siteName } from "@/lib/seo";
+
+type CategoryPageProps = { params: Promise<{ slug: string }> };
+
+export function generateStaticParams() {
+  return offerCategories.map((category) => ({ slug: category.slug }));
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
+  if (!category) return { title: "Category Not Found" };
+  return {
+    title: `${category.name} Offers`,
+    description: category.description,
+    alternates: { canonical: `/categories/${category.slug}` },
+    openGraph: {
+      title: `${category.name} Offers | ${siteName}`,
+      description: category.description,
+      url: absoluteUrl(`/categories/${category.slug}`),
+      images: [{ url: category.image, alt: category.name }],
+    },
+  };
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
+  const category = getCategoryBySlug(slug);
+  if (!category) notFound();
+
+  const offers = getOffersByCategory(category.slug);
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "CollectionPage", "@id": `${absoluteUrl(`/categories/${category.slug}`)}#webpage`, url: absoluteUrl(`/categories/${category.slug}`), name: `${category.name} Offers`, description: category.description },
+      { "@type": "ItemList", name: `${category.name} partner offers`, itemListElement: offers.map((offer, index) => ({ "@type": "ListItem", position: index + 1, url: absoluteUrl(`/offers/${offer.slug}`), name: offer.name })) },
+    ],
+  };
+
+  return (
+    <main className="min-h-screen bg-[#f4f1ea] text-[#172424]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />
+      <section className="relative overflow-hidden bg-[#14251f]">
+        <Image src={category.image} alt={category.name} fill sizes="100vw" className="object-cover opacity-25" priority />
+        <div className="absolute inset-0 bg-[#14251f]/75" aria-hidden />
+        <div className="relative mx-auto max-w-7xl px-5 py-14 text-white">
+          <Link href="/categories" className="inline-flex items-center gap-2 text-sm font-black text-[#8ee1bf]"><ArrowLeft className="h-4 w-4" aria-hidden /> Categories</Link>
+          <p className="mt-8 text-sm font-black uppercase tracking-[0.18em] text-[#8ee1bf]">{category.shortName}</p>
+          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">{category.name} Offers</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-[#e8f3ee]">{category.description}</p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-12">
+        <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm">
+          <div className="flex items-start gap-4">
+            <SearchCheck className="mt-1 h-7 w-7 flex-none text-[#1f6f5b]" aria-hidden />
+            <div>
+              <h2 className="text-2xl font-black">Buyer intent for this category</h2>
+              <p className="mt-3 text-base leading-8 text-[#596661]">{category.buyerIntent}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {category.keywords.map((keyword) => (
+                  <span key={keyword} className="rounded-md border border-[#ded7c9] bg-[#fffdf7] px-3 py-2 text-xs font-black text-[#53615d]">{keyword}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {offers.length > 0 ? offers.map((offer) => (
+            <article key={offer.slug} className="rounded-lg border border-[#ded7c9] bg-white p-5 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.14em] text-[#1f6f5b]">{offer.offerType}</p>
+              <h2 className="mt-2 text-xl font-black">{offer.name}</h2>
+              <p className="mt-3 text-sm leading-7 text-[#596661]">{offer.tagline}</p>
+              <ul className="mt-4 space-y-2">
+                {offer.idealFor.slice(0, 2).map((item) => <li key={item} className="flex gap-2 text-sm text-[#596661]"><Check className="mt-0.5 h-4 w-4 text-[#1f6f5b]" aria-hidden />{item}</li>)}
+              </ul>
+              <Link href={`/offers/${offer.slug}`} className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-md bg-[#172424] px-4 py-2 text-sm font-black text-white hover:bg-[#2d3f3f]">View offer page <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+            </article>
+          )) : (
+            <div className="rounded-lg border border-dashed border-[#cbbfaa] bg-white p-8 md:col-span-2 xl:col-span-3">
+              <h2 className="text-2xl font-black">No approved offers in this category yet.</h2>
+              <p className="mt-3 text-[#596661]">This category is ready for partner submissions. Once spreadsheet rows are approved, pages can be generated here.</p>
+              <Link href="/submit" className="mt-5 inline-flex min-h-11 items-center rounded-md bg-[#1f6f5b] px-4 py-2 text-sm font-black text-white">Submit an offer</Link>
+            </div>
+          )}
+        </div>
+      </section>
+    </main>
+  );
+}
