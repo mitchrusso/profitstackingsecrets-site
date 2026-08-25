@@ -1,20 +1,20 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, ClipboardCheck, FileSpreadsheet, SearchCheck } from "lucide-react";
+import { ArrowRight, BookOpenCheck, Calculator, SearchCheck } from "lucide-react";
 import { offerCategories } from "@/lib/offers";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Partner Listing Resources",
-  description: "Resources for Profit Stacking Secrets partner submissions, category strategy, page requirements, and spreadsheet-to-page publishing.",
+  title: "Profit Strategy Resources",
+  description: "Resources for using the Profit Stacking Secrets framework, calculator, category paths, and curated next-step offers.",
   path: "/resources",
 });
 
 const workflow = [
-  "Partner completes the Google Form with offer copy, pricing, commission, links, and image assets.",
-  "Responses land in the linked Google Sheet for review and cleanup.",
-  "Approved rows are converted into category pages and individual offer pages.",
-  "The sitemap updates so Google can discover the new approved pages.",
+  "Read the framework so you know where profit commonly hides.",
+  "Run the calculator to identify the weakest business lever.",
+  "Choose a resource category that matches the gap.",
+  "Use a practical tool, book, partner offer, or strategy conversation as the next step.",
 ];
 
 export default function ResourcesPage() {
@@ -22,13 +22,13 @@ export default function ResourcesPage() {
     <main className="min-h-screen bg-[#f4f1ea] px-5 py-14 text-[#172424]">
       <section className="mx-auto max-w-6xl">
         <p className="text-sm font-black uppercase tracking-[0.18em] text-[#1f6f5b]">Resources</p>
-        <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">How partner submissions become published offer pages.</h1>
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#596661]">This section explains the publishing workflow and gives Google a clear, crawlable context for the curated marketplace.</p>
+        <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">A simpler path from business gap to next step.</h1>
+        <p className="mt-5 max-w-3xl text-lg leading-8 text-[#596661]">Use these pages to understand the framework, diagnose profit leaks, and choose a practical improvement path.</p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
-          <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm"><FileSpreadsheet className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Form to sheet</h2><p className="mt-3 text-sm leading-7 text-[#596661]">The intake form collects the details needed to avoid thin listings and build useful partner pages.</p></div>
-          <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm"><ClipboardCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Curation review</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Submissions can be reviewed for fit, clarity, claims, assets, commission terms, and buyer relevance.</p></div>
-          <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm"><SearchCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">SEO pages</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Approved offers become searchable pages linked from category hubs and included in the sitemap.</p></div>
+          <Link href="/book" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><BookOpenCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Read the framework</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Start with the core idea: hidden profit is often inside existing assets, offers, follow-up, and delivery systems.</p></Link>
+          <Link href="/calculator" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><Calculator className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Run the calculator</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Score the five levers and locate the area most likely to produce a meaningful improvement.</p></Link>
+          <Link href="/categories" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><SearchCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Choose a path</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Move from diagnosis into tools, books, templates, programs, and implementation options.</p></Link>
         </div>
 
         <section className="mt-12 rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm">

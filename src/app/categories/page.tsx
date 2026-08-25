@@ -6,8 +6,8 @@ import { offerCategories } from "@/lib/offers";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Business Growth Offer Categories",
-  description: "Browse curated Profit Stacking Secrets categories for sales, AI, operations, leadership, profitability, coaching, SaaS, courses, events, and more.",
+  title: "Profit Improvement Resource Categories",
+  description: "Browse Profit Stacking Secrets resource categories for sales, AI, operations, leadership, profitability, coaching, SaaS, courses, events, and practical business leverage.",
   path: "/categories",
 });
 
@@ -20,14 +20,14 @@ export default function CategoriesPage() {
             <span className="grid h-11 w-11 place-items-center rounded-md bg-[#1f6f5b] text-white"><BriefcaseBusiness className="h-5 w-5" aria-hidden /></span>
             <span className="text-lg font-black tracking-tight">Profit Stacking Secrets</span>
           </Link>
-          <Link href="/submit" className="rounded-md bg-[#172424] px-4 py-3 text-sm font-black text-white">Submit Offer</Link>
+          <Link href="/calculator" className="rounded-md bg-[#172424] px-4 py-3 text-sm font-black text-white">Start Calculator</Link>
         </div>
       </header>
       <section className="bg-[#14251f] px-5 py-14 text-white">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#8ee1bf]">Categories</p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">Browse the opportunity stacks we can promote.</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-[#e8f3ee]">Each page is structured for buyer intent, partner submissions, comparison content, and internal linking.</p>
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#8ee1bf]">Resource Categories</p>
+          <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">Choose the profit lever you want to improve first.</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-[#e8f3ee]">Each category helps visitors move from a diagnosed business gap toward tools, templates, books, programs, or implementation support.</p>
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-5 py-12">

@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 export const siteUrl = "https://profitstackingsecrets.com";
 export const siteName = "Profit Stacking Secrets";
 export const defaultDescription =
-  "A curated marketplace of high-level partner offers for entrepreneurs who want better sales, systems, profit, productivity, leadership, AI, and growth leverage.";
-export const defaultOgImage = "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80";
+  "Profit Stacking Secrets helps entrepreneurs find hidden profit already inside their business with a diagnostic calculator, practical frameworks, and curated next-step resources.";
+export const defaultOgImage = "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80";
 
 export function absoluteUrl(path = "/") {
   return new URL(path, siteUrl).toString();

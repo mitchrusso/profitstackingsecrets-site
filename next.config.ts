@@ -16,6 +16,13 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/downloads/:path*",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
         source: "/:path*",
         headers: [
           { key: "X-DNS-Prefetch-Control", value: "on" },

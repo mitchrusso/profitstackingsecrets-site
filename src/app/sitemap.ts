@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/accessibility-statement",
     "/amazon-disclosure",
+    "/book",
+    "/calculator",
     "/categories",
     "/contact",
     "/cookie-policy",
