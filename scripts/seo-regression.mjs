@@ -21,6 +21,7 @@ const llms = read("src/app/llms.txt/route.ts");
 const nextConfig = read("next.config.ts");
 const builderPage = read("src/app/profit-stack-builder/page.tsx");
 const bookDownloadApi = read("src/app/api/book-download/route.ts");
+const layout = read("src/app/layout.tsx");
 
 assert(categoryPage.includes('"@type": "CollectionPage"'), "Category pages should use CollectionPage schema.");
 assert(categoryPage.includes("breadcrumbJsonLd"), "Category pages should include breadcrumb schema.");
@@ -36,5 +37,6 @@ assert(llms.includes("Profit Stacking Secrets") && llms.includes("Profit Stack B
 assert(nextConfig.includes("Strict-Transport-Security") && nextConfig.includes("X-Content-Type-Options"), "Security headers should remain configured.");
 assert(builderPage.includes('"@type": "SoftwareApplication"'), "Profit Stack Builder should use SoftwareApplication schema.");
 assert(bookDownloadApi.includes("/profit-stack-builder"), "Download follow-up email should point to the app upsell.");
+assert(layout.includes("https://app.rybbit.io/api/script.js") && layout.includes('data-site-id="c682939883a0"'), "Rybbit tracking snippet should remain installed.");
 
 console.log("SEO regression checks passed.");
