@@ -2,11 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowRight, Check, SearchCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Layers3, Route, SearchCheck, ShieldCheck } from "lucide-react";
 import { getCategoryBySlug, getOffersByCategory, offerCategories } from "@/lib/offers";
-import { absoluteUrl, jsonLd, siteName } from "@/lib/seo";
+import { absoluteUrl, breadcrumbJsonLd, jsonLd, siteName } from "@/lib/seo";
 
 type CategoryPageProps = { params: Promise<{ slug: string }> };
+type DecisionCard = {
+  title: string;
+  copy: string;
+  Icon: typeof Layers3;
+};
+
+const decisionCards: DecisionCard[] = [
+  {
+    title: "Problem fit",
+    copy: "Match the offer to the business leak you are trying to repair first.",
+    Icon: Layers3,
+  },
+  {
+    title: "Implementation path",
+    copy: "Look for proof, support, and a realistic next step before buying.",
+    Icon: Route,
+  },
+  {
+    title: "Terms check",
+    copy: "Confirm current pricing, commission terms, guarantees, and eligibility with the provider.",
+    Icon: ShieldCheck,
+  },
+];
 
 export function generateStaticParams() {
   return offerCategories.map((category) => ({ slug: category.slug }));
@@ -35,11 +58,36 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   if (!category) notFound();
 
   const offers = getOffersByCategory(category.slug);
+  const categoryUrl = absoluteUrl(`/categories/${category.slug}`);
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "CollectionPage", "@id": `${absoluteUrl(`/categories/${category.slug}`)}#webpage`, url: absoluteUrl(`/categories/${category.slug}`), name: `${category.name} Offers`, description: category.description },
-      { "@type": "ItemList", name: `${category.name} partner offers`, itemListElement: offers.map((offer, index) => ({ "@type": "ListItem", position: index + 1, url: absoluteUrl(`/offers/${offer.slug}`), name: offer.name })) },
+      {
+        "@type": "CollectionPage",
+        "@id": `${categoryUrl}#webpage`,
+        url: categoryUrl,
+        name: `${category.name} Offers`,
+        description: category.description,
+        isPartOf: { "@id": absoluteUrl("/#website") },
+        inLanguage: "en-US",
+        about: category.keywords,
+      },
+      breadcrumbJsonLd([
+        { name: "Home", path: "/" },
+        { name: "Categories", path: "/categories" },
+        { name: category.name, path: `/categories/${category.slug}` },
+      ]),
+      {
+        "@type": "ItemList",
+        "@id": `${categoryUrl}#offers`,
+        name: `${category.name} partner offers`,
+        itemListElement: offers.map((offer, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: absoluteUrl(`/offers/${offer.slug}`),
+          name: offer.name,
+        })),
+      },
     ],
   };
 
@@ -71,6 +119,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {decisionCards.map(({ title, copy, Icon }) => (
+            <div key={title} className="rounded-lg border border-[#ded7c9] bg-[#fffdf7] p-5 shadow-sm">
+              <Icon className="h-6 w-6 text-[#1f6f5b]" aria-hidden />
+              <h2 className="mt-3 text-lg font-black">{title}</h2>
+              <p className="mt-2 text-sm leading-6 text-[#596661]">{copy}</p>
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
