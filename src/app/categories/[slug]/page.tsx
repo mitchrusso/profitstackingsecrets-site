@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, Check, Layers3, Route, SearchCheck, ShieldCheck } from "lucide-react";
+import { getArticlesByCategory } from "@/lib/articles";
 import { getCategoryBySlug, getOffersByCategory, offerCategories } from "@/lib/offers";
 import { absoluteUrl, breadcrumbJsonLd, jsonLd, siteName } from "@/lib/seo";
 
@@ -58,6 +59,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   if (!category) notFound();
 
   const offers = getOffersByCategory(category.slug);
+  const articles = getArticlesByCategory(category.slug);
   const categoryUrl = absoluteUrl(`/categories/${category.slug}`);
   const schema = {
     "@context": "https://schema.org",
@@ -150,6 +152,22 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </div>
           )}
         </div>
+
+        {articles.length > 0 && (
+          <section className="mt-12">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#1f6f5b]">Related resources</p>
+            <h2 className="mt-3 text-3xl font-black leading-tight">Learn before choosing a next step.</h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {articles.map((article) => (
+                <Link key={article.slug} href={`/resources/${article.slug}`} className="group rounded-lg border border-[#ded7c9] bg-white p-5 shadow-sm hover:border-[#1f6f5b]">
+                  <h3 className="text-xl font-black group-hover:text-[#1f6f5b]">{article.title}</h3>
+                  <p className="mt-3 text-sm font-semibold leading-7 text-[#596661]">{article.description}</p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-black text-[#1f6f5b]">Read resource <ArrowRight className="h-4 w-4" aria-hidden /></span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
       </section>
     </main>
   );

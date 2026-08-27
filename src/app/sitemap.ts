@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { resourceArticles } from "@/lib/articles";
 import { offerCategories, partnerOffers } from "@/lib/offers";
 import { absoluteUrl } from "@/lib/seo";
 
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    ...resourceArticles.map((article) => ({
+      url: absoluteUrl(`/resources/${article.slug}`),
+      lastModified: new Date(article.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
     })),
     ...partnerOffers.map((offer) => ({
       url: absoluteUrl(`/offers/${offer.slug}`),

@@ -14,6 +14,11 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 - Offers: ${siteUrl}/offers
 - Partner submission page: ${siteUrl}/submit
 - Publishing resources: ${siteUrl}/resources
+- Article: ${siteUrl}/resources/find-hidden-profit-before-buying-more-traffic
+- Article: ${siteUrl}/resources/build-a-follow-up-system-for-lost-leads
+- Article: ${siteUrl}/resources/choose-business-offers-by-implementation-fit
+- Article: ${siteUrl}/resources/turn-authority-assets-into-profit-paths
+- Article: ${siteUrl}/resources/use-ai-automation-without-adding-chaos
 - FAQ: ${siteUrl}/faq
 - Review methodology: ${siteUrl}/review-methodology
 - Editorial policy: ${siteUrl}/editorial-policy
@@ -26,6 +31,10 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 - Profit Stack Builder implementation workflow
 - Free report to app to book/spreadsheet conversion path
 - Revenue leaks and follow-up gaps
+- Lead follow-up systems and conversion recovery
+- Business offer evaluation and implementation fit
+- Authority assets, lead magnets, and measurable conversion paths
+- AI automation projects that reduce operational friction
 - Offer packaging and buyer clarity
 - Client expansion and retention
 - Delivery leverage and repeatable systems

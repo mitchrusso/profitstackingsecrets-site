@@ -22,6 +22,9 @@ const nextConfig = read("next.config.ts");
 const builderPage = read("src/app/profit-stack-builder/page.tsx");
 const bookDownloadApi = read("src/app/api/book-download/route.ts");
 const layout = read("src/app/layout.tsx");
+const articles = read("src/lib/articles.ts");
+const articlePage = read("src/app/resources/[slug]/page.tsx");
+const resourcesPage = read("src/app/resources/page.tsx");
 
 assert(categoryPage.includes('"@type": "CollectionPage"'), "Category pages should use CollectionPage schema.");
 assert(categoryPage.includes("breadcrumbJsonLd"), "Category pages should include breadcrumb schema.");
@@ -38,5 +41,13 @@ assert(nextConfig.includes("Strict-Transport-Security") && nextConfig.includes("
 assert(builderPage.includes('"@type": "SoftwareApplication"'), "Profit Stack Builder should use SoftwareApplication schema.");
 assert(bookDownloadApi.includes("/profit-stack-builder"), "Download follow-up email should point to the app upsell.");
 assert(layout.includes("https://app.rybbit.io/api/script.js") && layout.includes('data-site-id="c682939883a0"'), "Rybbit tracking snippet should remain installed.");
+assert(articles.includes("find-hidden-profit-before-buying-more-traffic"), "Resource article data should include the hidden-profit pillar.");
+assert(articles.includes("references:") && articles.includes("https://www.sba.gov"), "Resource articles should include useful references.");
+assert(articlePage.includes('"@type": "Article"') && articlePage.includes("breadcrumbJsonLd"), "Resource article pages should include Article and breadcrumb schema.");
+assert(articlePage.includes('target="_blank"') && articlePage.includes('rel="noopener noreferrer"'), "Article reference links should open safely in a new tab.");
+assert(resourcesPage.includes("resourceArticles.map"), "Resources hub should link to individual articles.");
+assert(categoryPage.includes("getArticlesByCategory"), "Category pages should surface related articles.");
+assert(sitemap.includes("resourceArticles.map"), "Sitemap should include resource article routes.");
+assert(llms.includes("/resources/find-hidden-profit-before-buying-more-traffic"), "llms.txt should list major resource articles.");
 
 console.log("SEO regression checks passed.");

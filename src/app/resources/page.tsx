@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight, BookOpenCheck, Calculator, Layers3, SearchCheck } from "lucide-react";
+import { resourceArticles } from "@/lib/articles";
 import { offerCategories } from "@/lib/offers";
 import { pageMetadata } from "@/lib/seo";
 
@@ -38,6 +39,28 @@ export default function ResourcesPage() {
           <ol className="mt-5 grid gap-3">
             {workflow.map((step, index) => <li key={step} className="rounded-md bg-[#fffdf7] p-4 text-sm font-bold leading-7 text-[#596661]"><span className="mr-2 text-[#1f6f5b]">{index + 1}.</span>{step}</li>)}
           </ol>
+        </section>
+
+        <section className="mt-12">
+          <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-end">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#1f6f5b]">Profit strategy articles</p>
+              <h2 className="mt-3 max-w-3xl text-3xl font-black leading-tight sm:text-4xl">Read the guides that turn diagnosis into action.</h2>
+            </div>
+            <p className="max-w-md text-sm font-semibold leading-6 text-[#596661]">
+              These articles support the calculator, builder, category pages, and partner-offer marketplace with practical context and references.
+            </p>
+          </div>
+          <div className="mt-7 grid gap-5 md:grid-cols-2">
+            {resourceArticles.map((article) => (
+              <Link key={article.slug} href={`/resources/${article.slug}`} className="group rounded-lg border border-[#ded7c9] bg-white p-5 shadow-sm hover:border-[#1f6f5b]">
+                <p className="text-xs font-black uppercase tracking-[0.14em] text-[#1f6f5b]">{article.keywords[0]}</p>
+                <h3 className="mt-3 text-2xl font-black leading-tight group-hover:text-[#1f6f5b]">{article.title}</h3>
+                <p className="mt-3 text-sm font-semibold leading-7 text-[#596661]">{article.description}</p>
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#1f6f5b]">Read article <ArrowRight className="h-4 w-4" aria-hidden /></span>
+              </Link>
+            ))}
+          </div>
         </section>
 
         <section className="mt-12">
