@@ -74,6 +74,9 @@ export default function BookPage() {
             <Link href="/calculator" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-[#19745d] px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-white hover:bg-[#155f4d]">
               Use the Calculator <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
+            <Link href="/profit-stack-builder" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-[#cbd8cf] bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.12em] hover:border-[#19745d]">
+              See the App <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
             <Link href="/resources" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-[#cbd8cf] bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.12em] hover:border-[#19745d]">
               Read Resources <BookOpenCheck className="h-4 w-4" aria-hidden />
             </Link>

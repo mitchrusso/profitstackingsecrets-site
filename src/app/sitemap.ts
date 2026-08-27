@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faq",
     "/offers",
     "/privacy-policy",
+    "/profit-stack-builder",
     "/review-methodology",
     "/resources",
     "/safety-disclaimer",

@@ -103,11 +103,14 @@ export async function POST(request: Request) {
         <p>Here is the guide you requested:</p>
         <p><a href="${downloadUrl}" style="font-weight: 700; color: #0e7a5f;">Download Profit Stacking Secrets</a></p>
         <p>Use it to look for hidden profit in existing assets, follow-up, offers, delivery, and client expansion.</p>
+        <p><strong>Suggested next step:</strong> after reading the guide, run the Profit Stack Calculator and review the Profit Stack Builder app concept so you can turn the ideas into a 90-day action plan.</p>
+        <p><a href="${new URL("/calculator", siteUrl).toString()}" style="font-weight: 700; color: #0e7a5f;">Run the Profit Stack Calculator</a></p>
+        <p><a href="${new URL("/profit-stack-builder", siteUrl).toString()}" style="font-weight: 700; color: #0e7a5f;">See the Profit Stack Builder</a></p>
         <hr style="border: 0; border-top: 1px solid #dfe5dc; margin: 24px 0;" />
         <p style="font-size: 13px; color: #596661;">Requested by ${safeEmail} at profitstackingsecrets.com.</p>
       </div>
     `,
-    text: `Hi ${name},\n\nHere is the Profit Stacking Secrets guide you requested:\n${downloadUrl}\n\nUse it to look for hidden profit in existing assets, follow-up, offers, delivery, and client expansion.\n\nRequested by ${email} at profitstackingsecrets.com.`,
+    text: `Hi ${name},\n\nHere is the Profit Stacking Secrets guide you requested:\n${downloadUrl}\n\nUse it to look for hidden profit in existing assets, follow-up, offers, delivery, and client expansion.\n\nSuggested next step: run the Profit Stack Calculator, then review the Profit Stack Builder app concept so you can turn the ideas into a 90-day action plan.\n\nCalculator: ${new URL("/calculator", siteUrl).toString()}\nProfit Stack Builder: ${new URL("/profit-stack-builder", siteUrl).toString()}\n\nRequested by ${email} at profitstackingsecrets.com.`,
   });
 
   if (error) {

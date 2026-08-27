@@ -9,6 +9,7 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 - Home: ${siteUrl}/
 - Profit Stacking framework and book: ${siteUrl}/book
 - Profit Stack Calculator: ${siteUrl}/calculator
+- Profit Stack Builder app concept: ${siteUrl}/profit-stack-builder
 - Categories: ${siteUrl}/categories
 - Offers: ${siteUrl}/offers
 - Partner submission page: ${siteUrl}/submit
@@ -22,6 +23,8 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 
 ## Main Content Areas
 - Hidden profit opportunities
+- Profit Stack Builder implementation workflow
+- Free report to app to book/spreadsheet conversion path
 - Revenue leaks and follow-up gaps
 - Offer packaging and buyer clarity
 - Client expansion and retention

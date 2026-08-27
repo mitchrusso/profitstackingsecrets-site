@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, BookOpenCheck, Calculator, SearchCheck } from "lucide-react";
+import { ArrowRight, BookOpenCheck, Calculator, Layers3, SearchCheck } from "lucide-react";
 import { offerCategories } from "@/lib/offers";
 import { pageMetadata } from "@/lib/seo";
 
@@ -13,6 +13,7 @@ export const metadata: Metadata = pageMetadata({
 const workflow = [
   "Read the framework so you know where profit commonly hides.",
   "Run the calculator to identify the weakest business lever.",
+  "Use the Profit Stack Builder concept to turn the diagnosis into a 90-day plan.",
   "Choose a resource category that matches the gap.",
   "Use a practical tool, book, partner offer, or strategy conversation as the next step.",
 ];
@@ -25,9 +26,10 @@ export default function ResourcesPage() {
         <h1 className="mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-6xl">A simpler path from business gap to next step.</h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#596661]">Use these pages to understand the framework, diagnose profit leaks, and choose a practical improvement path.</p>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           <Link href="/book" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><BookOpenCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Read the framework</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Start with the core idea: hidden profit is often inside existing assets, offers, follow-up, and delivery systems.</p></Link>
           <Link href="/calculator" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><Calculator className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Run the calculator</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Score the five levers and locate the area most likely to produce a meaningful improvement.</p></Link>
+          <Link href="/profit-stack-builder" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><Layers3 className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Build the plan</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Use the app concept to move from insight into a practical weekly implementation plan.</p></Link>
           <Link href="/categories" className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm hover:border-[#1f6f5b]"><SearchCheck className="h-7 w-7 text-[#1f6f5b]" aria-hidden /><h2 className="mt-4 text-xl font-black">Choose a path</h2><p className="mt-3 text-sm leading-7 text-[#596661]">Move from diagnosis into tools, books, templates, programs, and implementation options.</p></Link>
         </div>
 

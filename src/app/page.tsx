@@ -8,6 +8,7 @@ import {
   ClipboardList,
   Compass,
   Handshake,
+  Layers3,
   SearchCheck,
   Sparkles,
 } from "lucide-react";
@@ -16,6 +17,7 @@ import { absoluteUrl, jsonLd, siteName } from "@/lib/seo";
 
 const navItems = [
   { href: "/book", label: "Book" },
+  { href: "/profit-stack-builder", label: "App" },
   { href: "/calculator", label: "Calculator" },
   { href: "/categories", label: "Resources" },
   { href: "/offers", label: "Partner Offers" },
@@ -35,6 +37,12 @@ const nextSteps = [
     icon: Calculator,
     title: "Run the Profit Stack Calculator",
     copy: "Score your business across revenue, margin, follow-up, leverage, and execution to find the most useful next move.",
+  },
+  {
+    href: "/profit-stack-builder",
+    icon: Layers3,
+    title: "Build the Action Plan",
+    copy: "Use the Profit Stack Builder concept to turn your diagnosis into a 90-day implementation path.",
   },
   {
     href: "/book",
@@ -202,7 +210,7 @@ export default function Home() {
           <div className="rounded-lg border border-[#dfe5dc] bg-white p-6 shadow-sm">
             <h3 className="text-2xl font-black">Best conversion path</h3>
             <ol className="mt-5 grid gap-3">
-              {["Read the positioning", "Run the calculator", "Choose the highest-impact gap", "Use a resource, partner offer, or strategy review"].map((step, index) => (
+            {["Download the report", "Run the calculator", "Build the action plan", "Use the book, spreadsheet, partner offer, or strategy review"].map((step, index) => (
                 <li key={step} className="rounded-md bg-[#f5f6f2] p-4 text-sm font-bold leading-7 text-[#596661]">
                   <span className="mr-2 text-[#19745d]">{index + 1}.</span>
                   {step}
