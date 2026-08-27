@@ -45,6 +45,23 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
           <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
+          <label className="block">
+            <span className="text-sm font-black uppercase tracking-[0.1em] text-[#40514b]">Reason</span>
+            <select
+              required
+              name="reason"
+              defaultValue="General question"
+              className="mt-2 min-h-12 w-full rounded-md border border-[#cbd8cf] bg-white px-4 text-base outline-none transition focus:border-[#0e7a5f] focus:ring-4 focus:ring-[#0e7a5f]/10"
+            >
+              <option>General question</option>
+              <option>Profit Stack Builder</option>
+              <option>Free report or book download</option>
+              <option>Calculator question</option>
+              <option>Partner offer submission</option>
+              <option>Strategy help</option>
+            </select>
+          </label>
+
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="block">
               <span className="text-sm font-black uppercase tracking-[0.1em] text-[#40514b]">Name</span>

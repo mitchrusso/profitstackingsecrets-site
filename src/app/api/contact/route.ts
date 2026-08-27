@@ -60,6 +60,7 @@ export async function POST(request: Request) {
 
   const name = clean(formData.get("name"));
   const email = clean(formData.get("email"));
+  const reason = clean(formData.get("reason")) || "General question";
   const subject = clean(formData.get("subject"));
   const message = clean(formData.get("message"));
 
@@ -92,6 +93,7 @@ ${message}`) > MAX_URLS) {
 
   const safeName = escapeHtml(name);
   const safeEmail = escapeHtml(email);
+  const safeReason = escapeHtml(reason);
   const safeSubject = escapeHtml(subject);
   const safeMessage = escapeHtml(message).replaceAll("\n", "<br />");
 
@@ -103,6 +105,7 @@ ${message}`) > MAX_URLS) {
     html: `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #18211f;">
         <h2>New Profit Stacking Secrets Contact Form Message</h2>
+        <p><strong>Reason:</strong> ${safeReason}</p>
         <p><strong>Name:</strong> ${safeName}</p>
         <p><strong>Email:</strong> ${safeEmail}</p>
         <p><strong>Subject:</strong> ${safeSubject}</p>
@@ -110,7 +113,7 @@ ${message}`) > MAX_URLS) {
         <p>${safeMessage}</p>
       </div>
     `,
-    text: `New Profit Stacking Secrets Contact Form Message\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`,
+    text: `New Profit Stacking Secrets Contact Form Message\n\nReason: ${reason}\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`,
   });
 
   if (error) {
