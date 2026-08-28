@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   title: { default: "Profit Stacking Secrets | Find Hidden Profit in Your Business", template: `%s | ${siteName}` },
   description: defaultDescription,
   applicationName: siteName,
-  authors: [{ name: siteName, url: siteUrl }],
-  creator: siteName,
+  authors: [{ name: "Mitch Russo", url: "https://mitchrusso.com/" }],
+  creator: "Mitch Russo",
   publisher: siteName,
   category: "Business",
   keywords: [
@@ -48,6 +48,8 @@ const websiteJsonLd = {
       name: siteName,
       url: siteUrl,
       description: defaultDescription,
+      founder: { "@type": "Person", name: "Mitch Russo", url: "https://mitchrusso.com/" },
+      sameAs: ["https://mitchrusso.com/"],
     },
     {
       "@type": "WebSite",
@@ -68,6 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning>
       <head>
+        <link rel="alternate" type="application/rss+xml" title="Profit Stacking Secrets Resources" href={absoluteUrl("/feed.xml")} />
         <Script src="https://app.rybbit.io/api/script.js" data-site-id="c682939883a0" strategy="afterInteractive" />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>

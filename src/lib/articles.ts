@@ -233,6 +233,216 @@ export const resourceArticles: ResourceArticle[] = [
     ],
     cta: { label: "Explore AI & Automation Offers", href: "/categories/ai-and-automation" },
   },
+  {
+    slug: "profit-leak-scorecard-for-service-businesses",
+    title: "A Profit Leak Scorecard for Service Businesses",
+    description:
+      "Use this scorecard to find service-business profit leaks in pricing, scope, follow-up, retention, delivery, and owner dependency.",
+    categorySlug: "finance-and-profitability",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    keywords: ["service business profit leaks", "profit scorecard", "pricing leakage", "margin improvement"],
+    summary:
+      "A service business can look healthy from the outside while quiet profit leaks drain margin every week. The first move is to score the leaks you can see.",
+    sections: [
+      {
+        heading: "Score the six places profit usually disappears",
+        body: [
+          "Start with six practical areas: pricing, scope control, lead follow-up, client retention, delivery efficiency, and founder dependency. Give each one a score from one to five. A low score does not mean the business is broken; it tells you where a focused improvement could matter fastest.",
+          "Pricing and cost discipline are especially important in service businesses because time, expertise, and attention are the inventory. The SBA's financial guidance is a useful reminder that profit improvement often begins with better visibility into costs and cash flow rather than a bigger marketing campaign.",
+        ],
+      },
+      {
+        heading: "Look for the leak with the shortest repair path",
+        body: [
+          "If proposals are underpriced, fix the offer and pricing language. If leads are slow to receive a reply, fix the response rhythm. If delivery is too custom, document the repeated steps. The best first project is not always the biggest leak; it is the leak you can repair with the least confusion.",
+          "This is why the Profit Stack Calculator asks for a diagnosis before choosing tools. A planner, dashboard, AI workflow, course, or consultant only helps when it matches the leak that needs attention.",
+        ],
+      },
+      {
+        heading: "Convert the score into one 30-day project",
+        body: [
+          "Choose one score to improve during the next month. Define the current condition, the desired condition, the owner, the deadline, and one metric. That can be proposal acceptance rate, renewal percentage, average project margin, follow-up speed, or hours of founder time saved.",
+          "A small completed repair is more valuable than a large vague transformation. Profit stacking works because each repair makes the next one easier to see.",
+        ],
+      },
+    ],
+    references: [
+      { label: "U.S. Small Business Administration: Manage your finances", url: "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances" },
+      { label: "SCORE: Small business financial templates and tools", url: "https://www.score.org/templates-resources" },
+      { label: "Google Search Central: Creating helpful content", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+    ],
+    cta: { label: "Run the Profit Stack Calculator", href: "/calculator" },
+  },
+  {
+    slug: "package-your-offer-before-you-raise-ad-spend",
+    title: "Package Your Offer Before You Raise Ad Spend",
+    description:
+      "A guide to improving offer clarity, buyer fit, proof, pricing, and next steps before spending more money to drive traffic.",
+    categorySlug: "sales-and-marketing",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    keywords: ["offer packaging", "conversion improvement", "ad spend efficiency", "sales page clarity"],
+    summary:
+      "More traffic rarely fixes an unclear offer. Package the promise, proof, fit, and next step before you pay to send more people into the funnel.",
+    sections: [
+      {
+        heading: "Make the buyer decision easier",
+        body: [
+          "A strong offer answers four questions quickly: who is this for, what changes, why should I believe it, and what happens next? If those answers are scattered across calls, emails, PDFs, and old pages, traffic will amplify confusion.",
+          "Google's helpful-content guidance is written for search, but the same principle applies to conversion: people should leave a page feeling that their question was answered clearly and honestly.",
+        ],
+      },
+      {
+        heading: "Add proof without exaggeration",
+        body: [
+          "Useful proof can include case studies, examples, testimonials, demonstrations, process screenshots, or before-and-after explanations. Avoid unsupported income claims, vague promises, and pressure language that creates mistrust.",
+          "The Federal Trade Commission's guidance on endorsements and advertising claims is a good guardrail: claims should be truthful, substantiated, and presented in a way people can understand.",
+        ],
+      },
+      {
+        heading: "Improve the next step",
+        body: [
+          "A buyer should not have to decode the path. Offer a diagnostic, consultation, calculator, guide, short application, or direct purchase depending on the complexity of the product. Then measure whether people take that step.",
+          "If conversion improves after clarifying the offer, paid traffic becomes safer to test because the page has a better chance of turning attention into revenue.",
+        ],
+      },
+    ],
+    references: [
+      { label: "Google Search Central: Helpful, reliable, people-first content", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
+      { label: "FTC: Endorsement Guides", url: "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews" },
+      { label: "FTC: Advertising and marketing basics", url: "https://www.ftc.gov/business-guidance/advertising-marketing" },
+    ],
+    cta: { label: "Explore Sales & Marketing Offers", href: "/categories/sales-and-marketing" },
+  },
+  {
+    slug: "use-a-90-day-plan-to-stack-profit-wins",
+    title: "Use a 90-Day Plan to Stack Profit Wins",
+    description:
+      "How to turn a profit diagnosis into a realistic 90-day implementation plan with weekly milestones, scorecards, and decision checkpoints.",
+    categorySlug: "productivity-and-time-management",
+    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    keywords: ["90 day business plan", "profit implementation plan", "weekly scorecard", "goal execution"],
+    summary:
+      "A 90-day plan is long enough to create visible progress and short enough to prevent the work from becoming abstract.",
+    sections: [
+      {
+        heading: "Translate diagnosis into weekly work",
+        body: [
+          "After you identify a weak profit lever, break the work into twelve weekly milestones. Each milestone should produce something visible: a revised offer, a follow-up email, a dashboard, a script, a checklist, a category page, or a customer-retention step.",
+          "Time management research and productivity advice often become too broad for entrepreneurs. The practical question is simpler: what is the one profit-improving deliverable that should exist by Friday?",
+        ],
+      },
+      {
+        heading: "Use a scorecard, not a mood check",
+        body: [
+          "A weekly scorecard keeps implementation honest. Track a small number of signals such as leads followed up, proposals sent, conversion rate, retained clients, gross margin, repeat purchases, or hours removed from the founder's calendar.",
+          "The scorecard is not there to make the business feel bureaucratic. It is there to reveal whether the current plan is producing movement.",
+        ],
+      },
+      {
+        heading: "Review, adjust, and stack",
+        body: [
+          "At the end of each month, keep what worked, drop what did not, and choose the next bottleneck. This prevents the business from collecting half-finished initiatives.",
+          "The Profit Stack Builder page exists for this reason: a useful plan should connect diagnosis, weekly action, and next-step resources into one sequence.",
+        ],
+      },
+    ],
+    references: [
+      { label: "SCORE: Business planning resources", url: "https://www.score.org/business-planning-financial-statements-template-gallery" },
+      { label: "U.S. Small Business Administration: Write your business plan", url: "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan" },
+      { label: "Google Search Central: SEO Starter Guide", url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide" },
+    ],
+    cta: { label: "Open the Profit Stack Builder", href: "/profit-stack-builder" },
+  },
+  {
+    slug: "turn-delivery-work-into-repeatable-systems",
+    title: "Turn Delivery Work Into Repeatable Systems",
+    description:
+      "How entrepreneurs can protect quality, reduce founder dependency, and improve margin by documenting repeated delivery work.",
+    categorySlug: "business-systems-and-operations",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    keywords: ["business systems", "delivery leverage", "standard operating procedures", "founder dependency"],
+    summary:
+      "Delivery leverage starts when repeated work becomes visible enough to improve, delegate, automate, or package.",
+    sections: [
+      {
+        heading: "Find the repeated work hiding inside custom delivery",
+        body: [
+          "Many service businesses believe every client engagement is unique. Some parts are, but the intake, diagnosis, onboarding, reporting, meeting rhythm, deliverables, and follow-up often repeat. Those repeated pieces are where leverage begins.",
+          "Documenting a process does not remove expertise. It protects it. The founder can still make judgment calls while the team follows a clearer operating path.",
+        ],
+      },
+      {
+        heading: "Build the first operating checklist",
+        body: [
+          "Pick one delivery moment that causes delay, rework, or confusion. Write down the trigger, inputs, steps, owner, quality standard, and handoff. Then use it three times and revise it.",
+          "NIST's cybersecurity framework is designed for a different domain, but its core idea is useful here: identify, protect, detect, respond, and recover. A business system should make important work observable before it becomes a crisis.",
+        ],
+      },
+      {
+        heading: "Turn the system into value",
+        body: [
+          "Once a delivery process is repeatable, it can support higher margins, better onboarding, faster training, clearer customer expectations, and more confident pricing.",
+          "It can also become an authority asset: a checklist, worksheet, template, diagnostic, or article that helps buyers understand why your process works.",
+        ],
+      },
+    ],
+    references: [
+      { label: "NIST Cybersecurity Framework", url: "https://www.nist.gov/cyberframework" },
+      { label: "SCORE: Operations resources", url: "https://www.score.org/templates-resources" },
+      { label: "U.S. Small Business Administration: Manage your business", url: "https://www.sba.gov/business-guide/manage-your-business" },
+    ],
+    cta: { label: "Explore Systems & Operations Offers", href: "/categories/business-systems-and-operations" },
+  },
+  {
+    slug: "when-to-buy-coaching-course-or-software",
+    title: "When to Buy Coaching, a Course, or Software",
+    description:
+      "A decision guide for entrepreneurs choosing between implementation help, educational programs, templates, software tools, and self-directed planning.",
+    categorySlug: "coaching-and-consulting",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+    publishedAt: "2026-08-28",
+    updatedAt: "2026-08-28",
+    keywords: ["business coaching vs course", "software vs consulting", "implementation support", "entrepreneur decision guide"],
+    summary:
+      "The right next step depends on the problem. Coaching helps when judgment and accountability are missing. Courses help when knowledge is missing. Software helps when a repeatable process is ready to run.",
+    sections: [
+      {
+        heading: "Choose based on the bottleneck",
+        body: [
+          "If you do not know what to do, a course, book, or framework may be enough. If you know what to do but are not doing it, coaching, accountability, or a mastermind may help. If the process is clear but too slow, software or automation may be the right move.",
+          "Buying the wrong type of help creates a familiar frustration: more information when you needed implementation, more tools when you needed strategy, or more calls when you needed a documented system.",
+        ],
+      },
+      {
+        heading: "Use proof and fit questions",
+        body: [
+          "Before buying, ask what problem the offer solves, what inputs are required, what implementation support exists, what success looks like, and what the realistic timeline is.",
+          "FTC guidance around advertising claims and endorsements is a useful reminder to evaluate proof carefully. Look for specifics, context, and realistic expectations rather than broad promises.",
+        ],
+      },
+      {
+        heading: "Match the purchase to the profit stack",
+        body: [
+          "A good purchase should connect directly to a profit lever: better conversion, better retention, better delivery, better pricing, better operating visibility, or reduced founder dependency.",
+          "That is why Profit Stacking Secrets separates resources by category and encourages diagnosis first. The site is most useful when the visitor can match the next purchase to the actual business gap.",
+        ],
+      },
+    ],
+    references: [
+      { label: "FTC: Advertising and marketing", url: "https://www.ftc.gov/business-guidance/advertising-marketing" },
+      { label: "FTC: Endorsements, influencers, and reviews", url: "https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews" },
+      { label: "SCORE: Find business mentors and resources", url: "https://www.score.org/find-mentor" },
+    ],
+    cta: { label: "Explore Coaching & Consulting Offers", href: "/categories/coaching-and-consulting" },
+  },
 ];
 
 export function getArticleBySlug(slug: string) {

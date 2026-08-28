@@ -19,12 +19,18 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 - Article: ${siteUrl}/resources/choose-business-offers-by-implementation-fit
 - Article: ${siteUrl}/resources/turn-authority-assets-into-profit-paths
 - Article: ${siteUrl}/resources/use-ai-automation-without-adding-chaos
+- Article: ${siteUrl}/resources/profit-leak-scorecard-for-service-businesses
+- Article: ${siteUrl}/resources/package-your-offer-before-you-raise-ad-spend
+- Article: ${siteUrl}/resources/use-a-90-day-plan-to-stack-profit-wins
+- Article: ${siteUrl}/resources/turn-delivery-work-into-repeatable-systems
+- Article: ${siteUrl}/resources/when-to-buy-coaching-course-or-software
 - FAQ: ${siteUrl}/faq
 - Review methodology: ${siteUrl}/review-methodology
 - Editorial policy: ${siteUrl}/editorial-policy
 - Disclaimer: ${siteUrl}/safety-disclaimer
 - Affiliate disclosure: ${siteUrl}/amazon-disclosure
 - Sitemap: ${siteUrl}/sitemap.xml
+- RSS feed: ${siteUrl}/feed.xml
 
 ## Main Content Areas
 - Hidden profit opportunities
@@ -36,6 +42,10 @@ Profit Stacking Secrets is a profit strategy hub for entrepreneurs who want to f
 - Authority assets, lead magnets, and measurable conversion paths
 - AI automation projects that reduce operational friction
 - Offer packaging and buyer clarity
+- Service business profit leakage and scorecards
+- 90-day profit implementation planning
+- Delivery leverage and repeatable operating systems
+- Coaching, courses, software, and implementation-fit decisions
 - Client expansion and retention
 - Delivery leverage and repeatable systems
 - Sales and marketing
