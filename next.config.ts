@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/terms-of-service",
+        destination: "/terms-and-conditions",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
