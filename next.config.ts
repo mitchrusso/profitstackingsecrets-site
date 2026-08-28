@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         destination: "/terms-and-conditions",
         permanent: true,
       },
+      {
+        source: "/sitemap_index.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
     ];
   },
   async headers() {
