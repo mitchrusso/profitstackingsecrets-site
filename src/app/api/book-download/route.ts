@@ -1,14 +1,17 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://profitstackingsecrets.com";
-const toEmail = process.env.CONTACT_TO_EMAIL || "mitchrusso@gmail.com";
-const fromEmail = process.env.CONTACT_FROM_EMAIL || "Profit Stacking Secrets <onboarding@resend.dev>";
 const downloadPath = "/downloads/profit-stacking-secrets-by-mitch-russo.pdf";
+const appUpsellPath = "/profit-stack-builder";
 const genericSendError = "We could not email the guide right now. Please try again in a few minutes.";
-const isResendTestSender = fromEmail.includes("onboarding@resend.dev");
+const tinyEmailAccountId = "e4ea2f69-5822-4136-a02b-d0045cabb18f";
+const tinyEmailFormId = "60b78d12-156e-4698-a7e9-4e506738047f";
+const tinyEmailSiteOrigin = process.env.TINYEMAIL_SITE_ORIGIN || "https://mitchrusso.com";
+const tinyEmailFormReferer =
+  process.env.TINYEMAIL_FORM_REFERER || "https://mitchrusso.com/profit-stacking-tinyemail-form-host/";
+const tinyEmailEndpoint = `https://api-form.tinyemail.com/ext/formservice/form-provider/${tinyEmailAccountId}/${tinyEmailFormId}`;
 
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 6;
@@ -16,15 +19,6 @@ const rateLimitStore = new Map<string, { count: number; resetAt: number }>();
 
 function clean(value: FormDataEntryValue | null) {
   return typeof value === "string" ? value.trim() : "";
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
 }
 
 function getClientIp(request: Request) {
@@ -73,50 +67,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
   }
 
-  if (!process.env.RESEND_API_KEY) {
-    console.error("Book download form is missing RESEND_API_KEY.");
-    return NextResponse.json({ error: genericSendError }, { status: 503 });
-  }
-
-  const resendApiKey = process.env.RESEND_API_KEY.trim();
-
-  if (!resendApiKey.startsWith("re_")) {
-    console.error("Book download form RESEND_API_KEY is not a valid Resend key format.");
-    return NextResponse.json({ error: genericSendError }, { status: 503 });
-  }
-
   const downloadUrl = new URL(downloadPath, siteUrl).toString();
-  const safeName = escapeHtml(name);
-  const safeEmail = escapeHtml(email);
-  const resend = new Resend(resendApiKey);
+  const appUpsellUrl = new URL(appUpsellPath, siteUrl).toString();
+  const nameParts = name.split(/\s+/).filter(Boolean);
+  const firstName = nameParts.shift() || name;
+  const lastName = nameParts.join(" ");
 
-  const { error } = await resend.emails.send({
-    from: fromEmail,
-    to: email,
-    bcc: toEmail,
-    ...(isResendTestSender ? {} : { replyTo: toEmail }),
-    subject: "Your Profit Stacking Secrets guide",
-    html: `
-      <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #18211f;">
-        <h2>Your Profit Stacking Secrets guide is ready</h2>
-        <p>Hi ${safeName},</p>
-        <p>Here is the guide you requested:</p>
-        <p><a href="${downloadUrl}" style="font-weight: 700; color: #0e7a5f;">Download Profit Stacking Secrets</a></p>
-        <p>Use it to look for hidden profit in existing assets, follow-up, offers, delivery, and client expansion.</p>
-        <p><strong>Suggested next step:</strong> after reading the guide, run the Profit Stack Calculator and review the Profit Stack Builder app concept so you can turn the ideas into a 90-day action plan.</p>
-        <p><a href="${new URL("/calculator", siteUrl).toString()}" style="font-weight: 700; color: #0e7a5f;">Run the Profit Stack Calculator</a></p>
-        <p><a href="${new URL("/profit-stack-builder", siteUrl).toString()}" style="font-weight: 700; color: #0e7a5f;">See the Profit Stack Builder</a></p>
-        <hr style="border: 0; border-top: 1px solid #dfe5dc; margin: 24px 0;" />
-        <p style="font-size: 13px; color: #596661;">Requested by ${safeEmail} at profitstackingsecrets.com.</p>
-      </div>
-    `,
-    text: `Hi ${name},\n\nHere is the Profit Stacking Secrets guide you requested:\n${downloadUrl}\n\nUse it to look for hidden profit in existing assets, follow-up, offers, delivery, and client expansion.\n\nSuggested next step: run the Profit Stack Calculator, then review the Profit Stack Builder app concept so you can turn the ideas into a 90-day action plan.\n\nCalculator: ${new URL("/calculator", siteUrl).toString()}\nProfit Stack Builder: ${new URL("/profit-stack-builder", siteUrl).toString()}\n\nRequested by ${email} at profitstackingsecrets.com.`,
-  });
+  try {
+    const response = await fetch(tinyEmailEndpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Origin: tinyEmailSiteOrigin,
+        Referer: tinyEmailFormReferer,
+      },
+      body: JSON.stringify({ firstName, lastName, email }),
+    });
 
-  if (error) {
-    console.error("Resend book download form error", error);
-    return NextResponse.json({ error: genericSendError }, { status: 500 });
+    if (!response.ok) {
+      const responseText = await response.text();
+      console.error("TinyEmail book enrollment failed", response.status, responseText.slice(0, 500));
+      return NextResponse.json({ error: genericSendError }, { status: 502 });
+    }
+
+    return NextResponse.json({ ok: true, downloadUrl, appUpsellUrl });
+  } catch (error) {
+    console.error("TinyEmail book enrollment error", error);
+    return NextResponse.json({ error: genericSendError }, { status: 502 });
   }
-
-  return NextResponse.json({ ok: true, downloadUrl });
 }

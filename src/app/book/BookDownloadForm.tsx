@@ -9,6 +9,7 @@ export default function BookDownloadForm() {
   const [submitState, setSubmitState] = useState<SubmitState>("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [downloadUrl, setDownloadUrl] = useState("");
+  const [appUpsellUrl, setAppUpsellUrl] = useState("");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -25,6 +26,7 @@ export default function BookDownloadForm() {
     if (response.ok) {
       form.reset();
       setDownloadUrl(result?.downloadUrl || "/downloads/profit-stacking-secrets-by-mitch-russo.pdf");
+      setAppUpsellUrl(result?.appUpsellUrl || "/profit-stack-builder");
       setSubmitState("sent");
       return;
     }
@@ -81,6 +83,11 @@ export default function BookDownloadForm() {
             {downloadUrl && (
               <a href={downloadUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 underline">
                 Open the PDF now <ArrowRight className="h-4 w-4" aria-hidden />
+              </a>
+            )}
+            {appUpsellUrl && (
+              <a href={appUpsellUrl} className="mt-2 inline-flex items-center gap-2 underline">
+                Turn it into a 90-day action plan <ArrowRight className="h-4 w-4" aria-hidden />
               </a>
             )}
           </div>
