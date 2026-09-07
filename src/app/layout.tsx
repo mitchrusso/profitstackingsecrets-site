@@ -71,7 +71,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning>
       <head>
         <link rel="alternate" type="application/rss+xml" title="Profit Stacking Secrets Resources" href={absoluteUrl("/feed.xml")} />
-        <Script src="https://app.rybbit.io/api/script.js" data-site-id="c682939883a0" strategy="afterInteractive" />
+        <Script src="https://app.rybbit.io/api/script.js" data-site-id="c682939883a0" strategy="beforeInteractive" />
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(websiteJsonLd)} />
