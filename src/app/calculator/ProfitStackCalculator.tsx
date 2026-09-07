@@ -66,6 +66,11 @@ export default function ProfitStackCalculator() {
     Object.fromEntries(levers.map((lever) => [lever.key, 3])),
   );
 
+  const updateScore = (key: string, value: number) => {
+    const score = Math.min(5, Math.max(1, value));
+    setScores((current) => ({ ...current, [key]: score }));
+  };
+
   const total = useMemo(() => Object.values(scores).reduce((sum, value) => sum + value, 0), [scores]);
   const result = recommendation(total);
   const weakest = useMemo(() => {
@@ -78,19 +83,45 @@ export default function ProfitStackCalculator() {
       <div className="grid gap-5">
         {levers.map((lever) => (
           <label key={lever.key} className="block rounded-md border border-[#dfe5dc] bg-[#fbfcf9] p-4">
-            <span className="text-sm font-black uppercase tracking-[0.12em] text-[#19745d]">{lever.label}</span>
-            <span className="mt-2 block text-lg font-black">{lever.question}</span>
-            <input
-              type="range"
-              min="1"
-              max="5"
-              value={scores[lever.key]}
-              onChange={(event) => setScores((current) => ({ ...current, [lever.key]: Number(event.target.value) }))}
-              className="mt-5 w-full accent-[#19745d]"
-            />
+            <span className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+              <span>
+                <span className="text-sm font-black uppercase tracking-[0.12em] text-[#19745d]">{lever.label}</span>
+                <span className="mt-2 block text-lg font-black">{lever.question}</span>
+              </span>
+              <span className="inline-flex min-w-16 justify-center rounded-md bg-[#12231f] px-3 py-2 text-sm font-black text-white">
+                {scores[lever.key]}/5
+              </span>
+            </span>
+            <span className="mt-5 grid grid-cols-[44px_1fr_44px] items-center gap-3">
+              <button
+                type="button"
+                onClick={() => updateScore(lever.key, scores[lever.key] - 1)}
+                className="grid h-11 w-11 place-items-center rounded-md border border-[#cfd8d0] bg-white text-xl font-black text-[#172424] shadow-sm hover:border-[#19745d] hover:text-[#19745d] focus:outline-none focus:ring-2 focus:ring-[#19745d]"
+                aria-label={`Decrease ${lever.label}`}
+              >
+                -
+              </button>
+              <input
+                type="range"
+                min="1"
+                max="5"
+                value={scores[lever.key]}
+                onInput={(event) => updateScore(lever.key, Number(event.currentTarget.value))}
+                onChange={(event) => updateScore(lever.key, Number(event.currentTarget.value))}
+                className="h-11 w-full cursor-pointer touch-pan-y accent-[#19745d]"
+                aria-label={lever.question}
+              />
+              <button
+                type="button"
+                onClick={() => updateScore(lever.key, scores[lever.key] + 1)}
+                className="grid h-11 w-11 place-items-center rounded-md border border-[#cfd8d0] bg-white text-xl font-black text-[#172424] shadow-sm hover:border-[#19745d] hover:text-[#19745d] focus:outline-none focus:ring-2 focus:ring-[#19745d]"
+                aria-label={`Increase ${lever.label}`}
+              >
+                +
+              </button>
+            </span>
             <span className="mt-2 flex justify-between text-xs font-bold text-[#596661]">
               <span>{lever.low}</span>
-              <span>{scores[lever.key]}/5</span>
               <span>{lever.high}</span>
             </span>
           </label>
