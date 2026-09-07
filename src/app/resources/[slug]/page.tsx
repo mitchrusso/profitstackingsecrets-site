@@ -102,6 +102,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <section className="mx-auto grid max-w-6xl gap-8 px-5 py-12 lg:grid-cols-[1fr_320px] lg:items-start">
           <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm sm:p-8">
             <p className="text-xl font-bold leading-9 text-[#40514b]">{article.summary}</p>
+            {article.table ? (
+              <figure className="mt-8 overflow-hidden rounded-lg border border-[#dfe5dc]">
+                <figcaption className="bg-[#edf6f1] px-5 py-4 text-lg font-black">{article.table.caption}</figcaption>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse text-left text-sm">
+                    <thead className="bg-[#f8faf7]"><tr>{article.table.columns.map((column) => <th key={column} scope="col" className="border-b border-[#dfe5dc] px-4 py-3 font-black">{column}</th>)}</tr></thead>
+                    <tbody>{article.table.rows.map((row) => <tr key={row.join("|")} className="border-b border-[#e6ece5] last:border-0">{row.map((cell, index) => <td key={cell} className="px-4 py-3 align-top leading-6">{index === 0 ? <strong>{cell}</strong> : cell}</td>)}</tr>)}</tbody>
+                  </table>
+                </div>
+              </figure>
+            ) : null}
             <div className="mt-8 space-y-9">
               {article.sections.map((section) => (
                 <section key={section.heading}>
