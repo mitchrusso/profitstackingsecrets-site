@@ -29,6 +29,165 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "customer-acquisition-payback-for-small-businesses",
+    "title": "Customer Acquisition Payback for Small Businesses",
+    "description": "Plan sales and marketing with a practical six-step workflow, evidence checks, implementation guidance, cautions, and a reusable review checklist.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/customer-acquisition-payback-for-small-businesses.svg",
+    "publishedAt": "2026-09-10T09:00:00-04:00",
+    "updatedAt": "2026-09-10",
+    "keywords": [
+      "customer acquisition payback period",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Audit one offer with collected revenue and offer-specific variable costs before changing price, promotion, or delivery.",
+    "sections": [
+      {
+        "heading": "At a glance: six checkpoints for sales and marketing",
+        "body": [
+          "1. Define the measurable profit question. 2. Collect source transactions for one period. 3. Separate fixed and variable costs. 4. Include labor and fulfillment burden. 5. Compare contribution dollars and margin. 6. Run one controlled improvement and review it.",
+          "Read the list once before acting. Circle the checkpoint with the weakest evidence. That is where the plan needs attention; polishing a later step cannot compensate for an unresolved early constraint."
+        ]
+      },
+      {
+        "heading": "Define the result and the stop rule",
+        "body": [
+          "Describe the result in observable terms. Include the person, object, or business process affected; the real environment; the acceptable range; and the point at which the work must stop. For sales and marketing, an unacceptable outcome includes missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue.",
+          "Separate hard constraints from preferences. A hard constraint can disqualify the method even when it is faster or cheaper. Write assumptions as assumptions, attach an owner, and give high-consequence unknowns a deadline for resolution."
+        ]
+      },
+      {
+        "heading": "Prepare with evidence that can change the decision",
+        "body": [
+          "Build the evidence packet around collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Keep it small enough to use during the work. Label each source with its date and scope, and separate a controlling requirement from a preference.",
+          "Set up the workspace and communication path before the demanding step. Define the measurable profit question; then confirm that collect source transactions for one period. Make the stop authority explicit. The person who notices a problem should not need to negotiate permission while the exposure or failure is growing."
+        ]
+      },
+      {
+        "heading": "The complete walkthrough",
+        "body": [
+          "1. Define the measurable profit question.",
+          "Document the starting condition before you define the measurable profit question. Without a baseline, the team may notice change but cannot judge whether it is acceptable. The baseline for sales and marketing should be brief, observable, and saved with analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "Checkpoint: before moving to “collect source transactions for one period,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "2. Collect source transactions for one period.",
+          "Close the loop after you collect source transactions for one period. Record the actual outcome, including friction and near misses, rather than only marking the task complete. Use that result to revise the next sales and marketing attempt while the details are still fresh.",
+          "Checkpoint: before moving to “separate fixed and variable costs,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "3. Separate fixed and variable costs.",
+          "Do not treat “separate fixed and variable costs” as a box to tick. Explain what the step protects and what evidence will prove it worked. Capture analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review, then compare the observation with the stated result. Continue only when the evidence supports the next checkpoint.",
+          "Checkpoint: before moving to “include labor and fulfillment burden,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "4. Include labor and fulfillment burden.",
+          "Practice this step on one completed offer cohort or representative month: include labor and fulfillment burden. Change one variable, keep the other conditions stable, and inspect the result before expanding the scope. A small test is useful only when it represents the difficult condition that the full workflow must handle.",
+          "Checkpoint: before moving to “compare contribution dollars and margin,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "5. Compare contribution dollars and margin.",
+          "Document the starting condition before you compare contribution dollars and margin. Without a baseline, the team may notice change but cannot judge whether it is acceptable. The baseline for sales and marketing should be brief, observable, and saved with analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "Checkpoint: before moving to “run one controlled improvement and review it,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "6. Run one controlled improvement and review it.",
+          "Treat this as the handoff checkpoint: run one controlled improvement and review it. The person receiving the work should be able to state the result, the remaining risk, and the next review date. If the handoff requires hidden context, the sales and marketing instruction is not finished.",
+          "Checkpoint: before moving to “schedule the next inspection or review,” write one sentence describing what passed, what did not, and who owns the unresolved item."
+        ]
+      },
+      {
+        "heading": "Run one representative small test",
+        "body": [
+          "Use one completed offer cohort or representative month and change only one meaningful variable. Define the expected result and the stopping signal before beginning. If missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue appears, end the test and return to the last acceptable condition.",
+          "Keep the test honest. Do not add help, favorable conditions, or expert intervention that will be absent during normal use. If the difficult case cannot be tested responsibly, escalate it to the qualified person or authority who can evaluate it."
+        ]
+      },
+      {
+        "heading": "Five mistakes that weaken a sales and marketing plan",
+        "body": [
+          "When a mistake appears, stabilize first. Protect the person, material, rights, equipment, food, environment, or client experience involved. Return to the first checkpoint contradicted by the evidence, revise one variable, and create a new stop rule before trying again."
+        ]
+      },
+      {
+        "heading": "Safety, permission, and professional boundaries",
+        "body": [
+          "Educational disclaimer: this guide is general business information, not accounting, tax, legal, or investment advice. Use actual records, define allocation assumptions, and have a qualified adviser review material tax or accounting decisions. No pricing, margin, or growth method guarantees revenue or profit.",
+          "Authoritative starting points:",
+          "Confirm that a source applies to the exact model, jurisdiction, land manager, product category, transaction, clinical situation, or activity. Save the access date and pair general guidance with current manufacturer instructions or individualized professional advice when appropriate."
+        ]
+      },
+      {
+        "heading": "Review the result and make it reusable",
+        "body": [
+          "Review analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. Compare the observation with the result statement, not with the effort invested. Decide to adopt, adjust, obtain qualified help, or stop.",
+          "Turn the final note into a short checklist for the next person. Include the six checkpoints, the approved range, a photograph or example where useful, the stop rule, and the escalation contact. A workflow is not delegated until another person can recognize both a good result and a reason to stop."
+        ]
+      },
+      {
+        "heading": "Your next 20 minutes",
+        "body": [
+          "Write the desired result and the unacceptable outcome. Complete checkpoint one using a current source or direct observation. Then prepare one completed offer cohort or representative month. If the critical evidence is missing, use the time to send one precise question instead of improvising.",
+          "The goal of this short session is not to finish sales and marketing. It is to reach the first defensible action with the stop rule already in place."
+        ]
+      },
+      {
+        "heading": "FAQ",
+        "body": [
+          "What should be verified first?.",
+          "Verify the fact that could disqualify the entire approach. In this workflow that usually means define the measurable profit question, followed by a check that you can collect source transactions for one period under real conditions.",
+          "How detailed should the written plan be?.",
+          "Detailed enough that another capable person can perform the next checkpoint and recognize missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue. For most situations, one page plus the controlling sources and analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review is more useful than a long narrative.",
+          "When is a small test not appropriate?.",
+          "Skip informal testing when a recall, emergency, legal restriction, clinical concern, structural question, food-safety uncertainty, unknown hazardous material, or manufacturer prohibition requires an authoritative response first.",
+          "What evidence should be saved afterward?.",
+          "Save analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. Add the source date, the person who approved the result, and the date or trigger for the next review.",
+          "What if the first attempt fails?.",
+          "Stop, protect the affected people and property, and preserve the evidence. Identify the earliest failed checkpoint, change one variable, and decide whether a second bounded test or qualified professional review is the responsible next step."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Offer-level profit audit worksheet",
+      "columns": [
+        "Line",
+        "Use",
+        "Decision signal"
+      ],
+      "rows": [
+        [
+          "Collected revenue",
+          "Cash actually collected less refunds",
+          "Use the same analysis period"
+        ],
+        [
+          "Direct labor",
+          "Delivery hours × loaded hourly cost",
+          "Include founder delivery time"
+        ],
+        [
+          "Variable costs",
+          "Fees, commissions, materials, contractors",
+          "Attach only costs caused by the sale"
+        ],
+        [
+          "Contribution",
+          "Collected revenue minus variable costs",
+          "Compare dollars and percentage"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA: Manage your finances",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+      },
+      {
+        "label": "IRS Publication 535: Business Expenses",
+        "url": "https://www.irs.gov/publications/p535"
+      },
+      {
+        "label": "FTC: Advertising and marketing",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "discount-leakage-measure-the-price-you-actually-collect",
     "title": "Discount Leakage: Measure the Price You Actually Collect",
     "description": "Plan pricing with a practical six-step workflow, evidence checks, implementation guidance, cautions, and a reusable review checklist.",
