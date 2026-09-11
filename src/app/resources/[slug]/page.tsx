@@ -86,7 +86,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />
       <article>
         <section className="relative overflow-hidden bg-[#12231f]">
-          <Image src={article.image} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="object-cover opacity-30" priority />
+          {!article.imageAlt ? <Image src={article.image} alt={article.title} fill sizes="100vw" className="object-cover opacity-30" priority /> : null}
           <div className="absolute inset-0 bg-[#12231f]/76" aria-hidden />
           <div className="relative mx-auto max-w-5xl px-5 py-14 text-white sm:py-20">
             <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-black text-[#8ee1bf]">
@@ -99,8 +99,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           </div>
         </section>
 
-        <section className="mx-auto grid max-w-6xl gap-8 px-5 py-12 lg:grid-cols-[1fr_320px] lg:items-start">
-          <div className="rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm sm:p-8">
+        {article.imageAlt ? <figure className="mx-auto mt-8 max-w-5xl px-5"><Image src={article.image} alt={article.imageAlt} width={1200} height={760} className="h-auto w-full rounded-lg" priority /></figure> : null}
+        <section className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-5 py-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start">
+          <div className="min-w-0 rounded-lg border border-[#ded7c9] bg-white p-6 shadow-sm sm:p-8">
             <p className="text-xl font-bold leading-9 text-[#40514b]">{article.summary}</p>
             {article.table ? (
               <figure className="mt-8 overflow-hidden rounded-lg border border-[#dfe5dc]">
@@ -113,9 +114,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 </div>
               </figure>
             ) : null}
+            <nav aria-label="Article contents" className="mt-8 rounded-lg border p-5">
+              <p className="font-bold">In this guide</p>
+              <ul className="mt-3 space-y-2">{article.sections.map((section, index) => <li key={section.heading}><a className="underline" href={`#article-section-${index}`}>{section.heading}</a></li>)}</ul>
+            </nav>
             <div className="mt-8 space-y-9">
-              {article.sections.map((section) => (
-                <section key={section.heading}>
+              {article.sections.map((section, sectionIndex) => (
+                <section id={`article-section-${sectionIndex}`} key={section.heading}>
                   <h2 className="text-2xl font-black leading-tight">{section.heading}</h2>
                   <div className="mt-4 space-y-4">
                     {section.body.map((paragraph) => (
