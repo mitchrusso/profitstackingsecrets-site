@@ -8,9 +8,11 @@ export type ArticleReference = {
 export type ResourceArticle = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   categorySlug: string;
   image: string;
+  imageAlt?: string;
   publishedAt: string;
   updatedAt: string;
   keywords: string[];
@@ -28,6 +30,161 @@ export type ResourceArticle = {
 };
 
 export const resourceArticles: ResourceArticle[] = [
+  {
+    "slug": "productized-service-scope-protect-margin-without-cutting-value",
+    "seoTitle": "Productized Service Scope: Protect Value and Margin",
+    "imageAlt": "Service package drawn as a defined boundary, with corrections inside and optional additions outside, plus a cost example.",
+    "title": "Productized Service Scope: Protect Margin Without Cutting Value",
+    "description": "Define deliverables, inputs, revisions, and acceptance criteria so a productized service protects customer value and makes delivery costs clearer.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/productized-service-scope-protect-margin-without-cutting-value-original.svg",
+    "publishedAt": "2026-09-11T09:00:00-04:00",
+    "updatedAt": "2026-09-11",
+    "keywords": [
+      "productized service scope",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Protect a productized service's margin by defining the result, required inputs, included work, revision limits, and acceptance criteria before the sale. Keep the work that creates the promised customer value. Price or decline requests that change the agreed deliverable, and fix repeated misunderstandings in the offer itself. A clearer boundary should make buying easier as well as make delivery more predictable.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Protect a productized service's margin by defining the result, required inputs, included work, revision limits, and acceptance criteria before the sale. Keep the work that creates the promised customer value. Price or decline requests that change the agreed deliverable, and fix repeated misunderstandings in the offer itself. A clearer boundary should make buying easier as well as make delivery more predictable."
+        ]
+      },
+      {
+        "heading": "At a glance: TL;DR for an existing offer",
+        "body": [
+          "Pick one service and review several completed jobs. Compare the promise with actual labor, revisions, waiting time, tools, and outside costs. Identify which variation reflects useful customization and which comes from an unclear agreement. Rewrite the offer as a defined deliverable with prerequisites and a change process. Test the revised scope on a small number of future sales, then measure delivery quality and contribution together."
+        ]
+      },
+      {
+        "heading": "Start with the customer's useful result",
+        "body": [
+          "A productized service packages a repeatable service so a buyer can understand what they will receive and how delivery works. It does not require pretending that every customer is identical. The first design question is what result can be delivered consistently for a well-defined type of customer with known inputs.",
+          "For a hypothetical website audit, the result might be a prioritized report on specified pages, with evidence and a review call. It is not automatically a redesign, implementation service, or guarantee of increased sales. Those may be valuable separate offers, but combining them into an undefined promise makes both cost and satisfaction difficult to manage.",
+          "Write the result in language a buyer can inspect at delivery. Avoid promises such as “transform your business” when the actual product is a report. The FTC's advertising and marketing guidance is a useful starting point for checking that promotional claims are truthful and appropriately supported."
+        ]
+      },
+      {
+        "heading": "Examine actual jobs before setting boundaries",
+        "body": [
+          "Select comparable completed engagements and record the original quote, deliverables, labor by role, purchased services, tools charged to the job, and revisions. Include founder delivery time using a reasonable internal cost assumption, clearly labeled. Separate client delays from active work so you can see whether the problem is labor, scheduling, or both.",
+          "Read the communication history for requests that expanded the engagement. Was the request a correction to your own work, an ambiguous promise the buyer reasonably relied on, or an additional deliverable? Those are different cases. A scope policy should not relabel your quality obligations as paid extras.",
+          "The SBA's financial management guidance supports keeping records that make business decisions understandable. For this review, use a consistent period and cost definition. A cash receipt in one month and labor in another can distort the comparison if treated carelessly."
+        ]
+      },
+      {
+        "heading": "Write scope in five concrete parts",
+        "body": [
+          "Define the deliverable, the included quantity or coverage, the customer inputs, the delivery sequence, and the acceptance criterion. In the audit example, specify the number of pages reviewed, the report format, the access needed, the review-call duration, and how factual corrections are handled. Avoid vague limits such as “reasonable revisions” unless both sides can understand what that means.",
+          "State what starts the delivery clock. If necessary account access or source material is missing, describe how the schedule changes. Identify one person authorized to consolidate client feedback. Multiple stakeholders can be accommodated, but an unlimited stream of conflicting feedback should not be the default operating model.",
+          "Make exclusions visible before purchase and place them next to the relevant promise. A buried exclusion that contradicts a prominent headline creates a customer-experience problem rather than solving a margin problem."
+        ]
+      },
+      {
+        "heading": "Use a scope boundary table",
+        "body": [
+          "This is an illustrative design, not a legal template. Your actual obligations depend on your promises, contract, customer relationship, and applicable rules. Have counsel review terms when the stakes or complexity warrant it."
+        ]
+      },
+      {
+        "heading": "Model contribution before changing the price",
+        "body": [
+          "Use a simple internal model: service revenue less the costs caused by delivering that engagement. State which costs you include and keep the method consistent. Contribution is not net profit because overhead, taxes, financing, and other costs may remain. The SBA break-even guidance distinguishes fixed and variable costs when assessing what sales must cover.",
+          "In a hypothetical example, a service sells for $1,500 and has $600 of delivery costs under your chosen definition, leaving $900 of contribution. An additional five hours at an assumed internal cost of $60 per hour reduces that figure by $300. The arithmetic illustrates sensitivity to extra labor; it is not an earnings claim or a typical result for this business.",
+          "Compare several plausible delivery cases. If the offer works only for the easiest customer, revisit eligibility, process, or price. Do not remove an essential deliverable merely to make the spreadsheet look better while leaving the original promise unchanged."
+        ]
+      },
+      {
+        "heading": "Make the change process easy to use",
+        "body": [
+          "When a new request arrives, acknowledge the desired result and compare it with the written scope. Explain whether it is included, a correction, or an addition. For an addition, provide the price, delivery impact, and any dependency before beginning. Preserve the approval in the ordinary project record.",
+          "Give customers a real choice: proceed with the existing deliverable, approve the addition, or discuss a different package. Avoid creating artificial obstacles to pressure an upgrade. If the same addition appears repeatedly, investigate whether the base offer omits something buyers reasonably need or whether a clearly named optional module would help."
+        ]
+      },
+      {
+        "heading": "Protect quality while reducing variation",
+        "body": [
+          "Standardize preparation, handoffs, templates, and checks that improve consistency. Leave room for judgment where the customer problem requires it. A reusable report structure can save time while the analysis inside it remains specific to the buyer. Replacing the analysis with generic filler lowers value even if delivery hours fall.",
+          "Track quality signals alongside margin: corrections, complaints, completion of prerequisites, use of the deliverable, and repeat requests for explanation. A shorter delivery time is not an improvement if the customer must spend more time discovering what the report means. Ask the delivery team where repeated confusion originates before adding another restriction."
+        ]
+      },
+      {
+        "heading": "Pilot the new scope on future work",
+        "body": [
+          "Choose a small set of new engagements for which the revised offer is appropriate. Do not unilaterally reduce existing contracted work. Explain the package clearly before the sale and ask buyers to identify anything they expect that is not described. That conversation can reveal ambiguity before it becomes an argument.",
+          "After delivery, compare actual labor with the estimate and ask whether the buyer received the promised result. Record the causes of variation, not just the total hours. Adjust one important boundary or delivery step at a time so you can tell what improved the outcome."
+        ]
+      },
+      {
+        "heading": "Common questions about productized scope",
+        "body": [
+          "Should every extra request be charged?.",
+          "No. Correcting your own error and fulfilling the original promise are different from expanding the deliverable. Use the agreement and the customer's reasonable understanding to distinguish them. Commercial judgment still matters.",
+          "Can a fixed scope guarantee a fixed margin?.",
+          "No. Delivery problems, refunds, acquisition costs, utilization, and other factors can change results. Scope is one control in a broader business model, not an earnings guarantee.",
+          "What should I do in the next 20 minutes?.",
+          "Review three comparable jobs and mark each unplanned task as correction, ambiguity, or addition. Rewrite the offer's most confusing boundary. Use the Profit Stack Calculator and resource library to examine the economics with your own assumptions.",
+          "Business disclaimer: examples are illustrative and do not promise revenue, profit, or tax treatment. Obtain qualified accounting, tax, or legal advice for decisions that depend on your circumstances."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Use a scope boundary table",
+      "columns": [
+        "Request",
+        "Treatment in a sample audit service",
+        "Why it belongs there"
+      ],
+      "rows": [
+        [
+          "Correct an error in the delivered report",
+          "Included correction",
+          "The original deliverable should be accurate"
+        ],
+        [
+          "Clarify one recommendation during the agreed call",
+          "Included explanation",
+          "Helps the buyer use the purchased result"
+        ],
+        [
+          "Review pages outside the agreed set",
+          "Separate quoted addition",
+          "Expands the amount of analysis"
+        ],
+        [
+          "Implement the recommendations",
+          "Separate service or referral",
+          "Requires different work and responsibility"
+        ],
+        [
+          "Replace all inputs after analysis starts",
+          "Discuss impact before continuing",
+          "May invalidate completed work"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "FTC's advertising and marketing guidance",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      },
+      {
+        "label": "SBA's financial management guidance",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+      },
+      {
+        "label": "SBA break-even guidance",
+        "url": "https://legacy.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs/break-even-point"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
   {
     "slug": "customer-acquisition-payback-for-small-businesses",
     "title": "Customer Acquisition Payback for Small Businesses",

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   if (!article) return { title: "Resource Not Found" };
 
   return {
-    title: article.title,
+    title: article.seoTitle ? { absolute: article.seoTitle } : article.title,
     description: article.description,
     alternates: { canonical: `/resources/${article.slug}` },
     keywords: article.keywords,
@@ -86,7 +86,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />
       <article>
         <section className="relative overflow-hidden bg-[#12231f]">
-          <Image src={article.image} alt={article.title} fill sizes="100vw" className="object-cover opacity-30" priority />
+          <Image src={article.image} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="object-cover opacity-30" priority />
           <div className="absolute inset-0 bg-[#12231f]/76" aria-hidden />
           <div className="relative mx-auto max-w-5xl px-5 py-14 text-white sm:py-20">
             <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-black text-[#8ee1bf]">
