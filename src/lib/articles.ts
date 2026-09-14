@@ -31,6 +31,164 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "renewal-revenue-map-find-the-missing-second-sale",
+    "title": "Renewal Revenue Map: Find the Missing Second Sale",
+    "seoTitle": "Renewal Revenue Map: Find the Missing Second Sale",
+    "imageAlt": "Original renewal journey diagram with separate customer stages and an explicit delivery issue branch before a renewal offer.",
+    "description": "Renewal Revenue Map: Find the Missing Second Sale: a practical, researched guide with decisions, implementation steps, a comparison table, an original visual, s",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/renewal-revenue-map-find-the-missing-second-sale-original.svg",
+    "publishedAt": "2026-09-14T09:00:00-04:00",
+    "updatedAt": "2026-09-14",
+    "keywords": [
+      "customer renewal revenue",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Map renewal revenue by following eligible customers from the end of their first purchase to a clear next decision. Separate customers who no longer need the offer from those who received poor delivery, never saw a renewal option, or could not understand its value. Improve the broken step before adding discounts or assuming every customer should buy again.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Map renewal revenue by following eligible customers from the end of their first purchase to a clear next decision. Separate customers who no longer need the offer from those who received poor delivery, never saw a renewal option, or could not understand its value. Improve the broken step before adding discounts or assuming every customer should buy again."
+        ]
+      },
+      {
+        "heading": "At a glance: follow the renewal path",
+        "body": [
+          "1. Define who is genuinely eligible to renew. Use the offer's actual cycle and customer need. 2. Match invoices to delivery and customer records. Separate billed, collected, refunded, and outstanding amounts. 3. Locate the missing transition. Distinguish delivery problems, no offer, unclear value, declined offers, and payment failures. 4. Calculate contribution after renewal costs. Include support, fulfillment, discounts, fees, and expected rework. 5. Test one useful change with a small eligible group. Protect customer choice and existing contract terms. 6. Review cash, margin, and customer outcomes together. A second sale is valuable only when the business can deliver it responsibly."
+        ]
+      },
+      {
+        "heading": "Define renewal before counting it",
+        "body": [
+          "A renewal might mean continuing a recurring service, purchasing another project, replacing a consumable product, or returning for a new engagement. These are different behaviors. Choose one definition for the first map and specify the normal decision window. A customer whose annual service is only three months old should not be counted as a missed renewal.",
+          "Identify the relevant customer cohort: for example, customers whose initial engagement ended in the same month and who could reasonably benefit from continued service. Exclude customers who purchased a genuinely one-time solution unless there is a distinct, useful next need. A healthy business can have satisfied customers who do not need another sale.",
+          "Record the dates and assumptions behind eligibility. If you later change the definition, recalculate the comparison group rather than combining incompatible periods. Clear denominators matter: “20 renewals” means little without knowing whether 25 or 200 customers were eligible and whether all received an offer."
+        ]
+      },
+      {
+        "heading": "Reconcile the customer and money records",
+        "body": [
+          "Start with invoices, collections, credits, refunds, delivery completion, and the relevant customer communications. A CRM stage called “renewed” may represent a verbal promise rather than collected money. Likewise, an invoice can be issued before the customer has paid or before the service can be delivered.",
+          "Use a stable customer identifier to join records. Check duplicates, renamed companies, multiple contacts, and separate purchases belonging to the same account. Do not let a spreadsheet count two invoices for one renewal as two retained customers. Preserve transaction-level evidence so a surprising result can be traced back to its source.",
+          "The SBA business management resources emphasize proper bookkeeping as part of managing finances. For this operational map, keep collected cash, recognized revenue, and delivery obligations clearly labeled and review accounting treatment with your accountant. The map supports decisions; it should not silently redefine the business's accounting policies."
+        ]
+      },
+      {
+        "heading": "Draw the stages customers actually pass through",
+        "body": [
+          "Use a short sequence: eligible, delivery complete, outcome reviewed, renewal offered, decision received, payment collected, next service started. Adapt those stages to your business, but make each one observable. “Engaged” or “warm” is harder to audit than “received a written renewal proposal on September 3.”",
+          "For every eligible customer, record the last completed stage and the reason the next stage has not occurred. A missing proposal calls for a different response from an unresolved delivery complaint. A customer who explicitly declines should not remain indefinitely in a optimistic “follow up” category that hides the decision.",
+          "Keep reason codes small and useful. Begin with no remaining need, delivery issue, no offer sent, unclear scope or value, budget or timing, declined for another reason, and payment or administration problem. Preserve the customer's actual explanation alongside the category. Staff guesses should be marked unconfirmed rather than presented as customer research."
+        ]
+      },
+      {
+        "heading": "Use a renewal worksheet",
+        "body": [
+          "The worksheet helps assign work without treating every nonrenewal as a sales objection. Sometimes the correct action is to close the record respectfully. Sometimes it is to improve first-delivery quality. Those conclusions may reduce short-term offers while improving the reliability of the business."
+        ]
+      },
+      {
+        "heading": "Check contribution before offering a discount",
+        "body": [
+          "Consider a hypothetical renewal priced at $1,000. Suppose direct fulfillment is $550, payment fees are $30, and expected incremental support is $120. That leaves $300 of contribution before fixed overhead and other costs not included in this simplified example. A $150 discount would reduce that contribution to $150 if the other costs stayed unchanged.",
+          "These numbers are illustrations, not expected results. Use your actual delivery records and account for refunds, rework, contractor charges, variable software costs, and founder time where relevant. If additional volume requires hiring or another capacity step, model that separately rather than assuming every new renewal has the same cost.",
+          "A discount can also affect customer expectations and future pricing. Before using one, identify the barrier it addresses. If the customer does not understand the next deliverable or is dissatisfied with the first, a lower price may conceal the underlying problem. Test a clearer scope or delivery repair before assuming price is the cause."
+        ]
+      },
+      {
+        "heading": "Run one bounded renewal experiment",
+        "body": [
+          "Choose a small eligible group with comparable circumstances and change one practical step. Examples include scheduling an outcome review before the service ends, sending a clearer scope summary, or assigning one owner to unresolved payment administration. Write what you expect to change and what would count as a poor result.",
+          "Record the offer date, customer response, collected amount, incremental delivery cost, and any complaint or cancellation. Keep a comparison with the prior process, while acknowledging differences in customer mix and timing. A small test can suggest a useful operational change; it cannot prove a universal retention lift.",
+          "Preserve customer choice. Follow the actual agreement and applicable renewal, cancellation, advertising, and communication requirements. Do not silently convert a one-time purchase into recurring billing or represent a follow-up service as mandatory when it is optional. Use the FTC advertising and marketing guidance when reviewing claims and seek legal advice for specific contract or subscription questions."
+        ]
+      },
+      {
+        "heading": "Review the second delivery, too",
+        "body": [
+          "Do not stop measuring when payment arrives. Check whether renewed work starts on time, meets the agreed scope, and consumes the expected capacity. A renewal campaign that creates late delivery or expensive rework may worsen contribution even while gross sales increase.",
+          "Keep the owner of the renewal map connected with the delivery team. If several customers request the same missing capability, evaluate whether to build it, price it separately, refer the need elsewhere, or decline it. Selling an unplanned promise repeatedly is not a renewal strategy.",
+          "At the end of the trial, compare collected cash, contribution, workload, and customer outcomes. Keep a change when the evidence supports it, revise it when the mechanism is unclear, and stop it when it creates harm or unreliable delivery. Record the limits of the conclusion so the next team member does not mistake an early observation for a guaranteed result."
+        ]
+      },
+      {
+        "heading": "FAQ",
+        "body": [
+          "Is every customer who does not renew a lost opportunity?.",
+          "No. Some needs end, some offers are deliberately one-time, and some customers are better served by another option. Eligibility and fit should come before persuasion.",
+          "Should I count an accepted proposal as revenue?.",
+          "Keep accepted proposals, invoices, collections, and accounting revenue in separate fields. Ask your accountant about the correct recognition treatment for your business.",
+          "What is the first number to calculate?.",
+          "Count eligible customers and locate their last completed stage. That reveals whether the immediate problem is missing information, delivery, offers, decisions, or collection before you optimize a headline rate."
+        ]
+      },
+      {
+        "heading": "Your next action and limits",
+        "body": [
+          "Map ten recently eligible customers using existing records. Assign one unresolved transition an owner and a review date. Then compare the proposed improvement with its delivery cost using the profit calculator and the Profit Stacking framework.",
+          "Educational disclaimer: this is general business information, not legal, tax, accounting, investment, or earnings advice. Renewal experiments can fail, and no revenue, retention, margin, or profit outcome is promised. Use qualified advisers for material decisions and complete records for every financial comparison."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Use a renewal worksheet",
+      "columns": [
+        "Last completed stage",
+        "Question to investigate",
+        "Responsible action",
+        "Guardrail"
+      ],
+      "rows": [
+        [
+          "Initial delivery",
+          "Was the promised work completed and accepted?",
+          "Resolve delivery gaps before selling more",
+          "Do not charge again to fix an existing obligation"
+        ],
+        [
+          "Outcome review",
+          "Does the customer have a useful next need?",
+          "Discuss fit and remaining priorities",
+          "Accept a valid decision not to continue"
+        ],
+        [
+          "Renewal offer",
+          "Was scope, price, timing, and choice clear?",
+          "Clarify the offer and decision date",
+          "Avoid misleading urgency or earnings claims"
+        ],
+        [
+          "Customer acceptance",
+          "Is payment or administration blocking the start?",
+          "Resolve the specific issue through approved channels",
+          "Protect payment data and contract terms"
+        ],
+        [
+          "Second delivery",
+          "Can the business fulfill the added work?",
+          "Reserve realistic capacity",
+          "Do not overload the team to inflate sales"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA business management resources",
+        "url": "https://www.sba.gov/counseling/manage-your-business/"
+      },
+      {
+        "label": "FTC advertising and marketing guidance",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "productized-service-scope-protect-margin-without-cutting-value",
     "seoTitle": "Productized Service Scope: Protect Value and Margin",
     "imageAlt": "Service package drawn as a defined boundary, with corrections inside and optional additions outside, plus a cost example.",
