@@ -31,6 +31,159 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "founder-dependency-audit-which-work-should-become-a-system",
+    "title": "Founder Dependency Audit: Which Work Should Become a System?",
+    "seoTitle": "Founder Dependency Audit: Which Work Should Become a System?",
+    "imageAlt": "Original founder dependency network with three incoming work requests converging on a founder and one bounded handoff to an authorized owner.",
+    "description": "Find work that stalls without the founder. Use an interruption log, clear decision limits, and a supervised handoff to test one operating system.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/founder-dependency-audit-which-work-should-become-a-system-original.svg",
+    "publishedAt": "2026-09-15T09:00:00-04:00",
+    "updatedAt": "2026-09-15",
+    "keywords": [
+      "founder dependency audit",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Start a founder dependency audit with work that repeatedly stops when you are unavailable. Record the interruption, the decision needed, and the consequence of waiting. Then choose one recurring, bounded task that another authorized person could complete with clear inputs and escalation rules. The goal is a reliable handoff; creating a large manual before you know where work stalls can consume time without relieving the bottleneck.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Start a founder dependency audit with work that repeatedly stops when you are unavailable. Record the interruption, the decision needed, and the consequence of waiting. Then choose one recurring, bounded task that another authorized person could complete with clear inputs and escalation rules. The goal is a reliable handoff; creating a large manual before you know where work stalls can consume time without relieving the bottleneck."
+        ]
+      },
+      {
+        "heading": "TL;DR",
+        "body": [
+          "Track founder interruptions for five working days. Separate missing information, missing authority, missing skill, and relationship-dependent judgment. Prioritize a frequent task with a visible output and manageable consequences. Document the decision boundaries, let a colleague perform a supervised example, and compare the result with an agreed standard. Measure founder time, rework, customer impact, and operating cost before expanding the handoff."
+        ]
+      },
+      {
+        "heading": "Log interruptions without judging the person asking",
+        "body": [
+          "Create a simple log with date, task, request, time spent, reason for escalation, and what happened while the request waited. Include interruptions that arrive by message, during meetings, and through last-minute rescue work. Record a reasonable estimate when precise timing would be intrusive. The purpose is to see a pattern, not to build surveillance of employees or punish people for asking a necessary question.",
+          "Write the actual decision instead of a broad department label. “Sales” is too vague. “Approve a discount for a returning customer whose renewal includes a new deliverable” describes a decision you can examine. Add whether the relevant scope, price, or customer record was already available. This often reveals that the first improvement is a reliable source of information rather than a new hire or a complicated workflow."
+        ]
+      },
+      {
+        "heading": "Distinguish ownership from founder access",
+        "body": [
+          "A task can have an assigned employee and still depend on the founder for every meaningful choice. Ask what that person is authorized to decide, which information they can access, and when they must escalate. Responsibility without decision rights often creates a queue of requests. Conversely, broad authority without limits can expose customers and the business to commitments nobody intended.",
+          "Use a concrete example to define the boundary. A customer-support owner might be authorized to correct a duplicate invoice after confirming the underlying record, while a disputed contract interpretation goes to the appropriate manager or adviser. The right limits depend on your business. Do not copy another company's dollar threshold and assume it fits your cash position, obligations, or fraud controls."
+        ]
+      },
+      {
+        "heading": "Select a task with a visible finish",
+        "body": [
+          "Good early candidates recur often enough to practice and produce something you can inspect: a prepared invoice, an onboarding packet, a weekly capacity report, or a routine scheduling decision. Avoid choosing the most emotionally difficult client negotiation simply because it consumes the most founder energy. That task may require relationship development or specialist judgment before it can be handed off responsibly.",
+          "Score candidate tasks on frequency, founder time, delay cost, variability, and the consequences of an error. You do not need a mathematically elaborate ranking. A short discussion around actual examples is often enough to identify one useful starting point. Keep legal, tax, employment, payment-authorization, and confidential-data decisions subject to appropriate professional and organizational controls."
+        ]
+      },
+      {
+        "heading": "Write a one-task operating note",
+        "body": [
+          "Include the trigger, required inputs, steps, expected output, location of the final record, and conditions requiring escalation. Link to the current source of prices, contract terms, or customer information instead of copying values into several documents. Duplicated reference data can turn a correct procedure into a source of conflicting instructions when one copy becomes outdated.",
+          "Add one ordinary example and one exception. For onboarding, the ordinary example might show a complete signed scope and approved start date. The exception might show a missing authorization that prevents scheduling. Use synthetic or appropriately redacted customer information for training. A screenshot containing private data is not automatically acceptable because the document is intended for internal use."
+        ]
+      },
+      {
+        "heading": "Test the handoff with real observation",
+        "body": [
+          "Have the colleague explain the instructions back to you, then perform an authorized example while you observe. Note where they stop, which information they seek, and where the written note is ambiguous. Avoid silently completing the difficult step yourself. If you rescue the task without documenting why, the apparent success can conceal the dependency you intended to remove.",
+          "For the next example, reduce intervention while retaining the review appropriate to the task's risk. Compare the output with the agreed standard before it affects a customer or financial record when that review is required. If a mistake occurs, ask whether the input, instruction, skill, authority, or workload caused it. Rewriting the entire manual is rarely necessary when one unclear decision boundary caused the failure."
+        ]
+      },
+      {
+        "heading": "Calculate the operating effect honestly",
+        "body": [
+          "Use illustrative arithmetic to estimate the value of the change. Suppose a task previously used four founder hours each week. After handoff it uses one founder review hour and three employee hours. The founder has recovered three hours of capacity, but the business has not automatically earned more profit. Training, supervision, wages, rework, and what the founder does with the recovered time all affect the result.",
+          "Track those factors separately. Record founder time before and after, colleague time, errors, customer complaints, and any additional software expense. Compare similar work volumes so a quiet week does not look like a process breakthrough. Treat a short pilot as local operating evidence, not a forecast of guaranteed savings or revenue. See the SBA business-management guide for related finance, employee, and compliance considerations."
+        ]
+      },
+      {
+        "heading": "Make continuity part of the design",
+        "body": [
+          "A handoff from one indispensable person to another is useful but incomplete. Identify a backup for essential work and show where the current instructions and authorized access live. Do not share personal passwords to make the process work. Use appropriate individual accounts and access permissions, and involve your technology provider when access recovery or security needs attention.",
+          "The SBA emergency-preparation guidance emphasizes plans tailored to business operations and practicing them with staff. Apply that principle narrowly here: rehearse the selected task during a planned founder absence. Confirm that ordinary work proceeds and that exceptions reach a known backup. Do not simulate an absence by abandoning urgent customer or employee obligations."
+        ]
+      },
+      {
+        "heading": "Keep the procedure current",
+        "body": [
+          "Assign someone to own the operating note. Add a version date and a practical review trigger, such as a price change, revised offer, new system, or repeated exception. A monthly reminder can help, but a known change should not wait for the calendar. Archive superseded instructions so a search does not return several apparently current answers.",
+          "After the pilot, decide whether to keep, revise, or pause the handoff. Make that decision with the colleague who performed the work. Their observations may identify a simpler service design or an unnecessary approval. Keep the next improvement small enough to evaluate rather than turning a successful single-task handoff into an immediate company-wide reorganization."
+        ]
+      },
+      {
+        "heading": "FAQs",
+        "body": [
+          "Should I document everything I do?.",
+          "Begin with repeated bottlenecks and essential continuity needs. A focused procedure that is used and maintained is more useful than an exhaustive archive nobody can navigate.",
+          "Does delegation mean I stop reviewing?.",
+          "No. Match review to the task, the person's demonstrated capability, and the consequences of an error. Define review responsibility explicitly instead of relying on the founder to notice problems informally.",
+          "What should I do first?.",
+          "Open a five-day interruption log and record the next actual request for your involvement. At the end of the week, choose one bounded task for a supervised handoff. Explore our business resources for related margin and delivery planning."
+        ]
+      },
+      {
+        "heading": "Business disclaimer",
+        "body": [
+          "This is an operational planning method, not legal, tax, employment, or investment advice. It does not guarantee profit, revenue, valuation, or owner independence. Use qualified advisers for regulated decisions and evaluate costs and customer outcomes before expanding a change."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "At a glance",
+      "columns": [
+        "Why work stops",
+        "Example",
+        "First intervention"
+      ],
+      "rows": [
+        [
+          "Information exists only with founder",
+          "Team cannot find an approved scope",
+          "Put the current record in an accessible location"
+        ],
+        [
+          "Authority is unclear",
+          "Every ordinary refund waits for approval",
+          "Define authorized limits and exceptions"
+        ],
+        [
+          "Skill is missing",
+          "Nobody else can reconcile a report",
+          "Train with worked examples and review"
+        ],
+        [
+          "Customer relationship is concentrated",
+          "Client will speak only with founder",
+          "Introduce a responsible second contact"
+        ],
+        [
+          "Task itself is unstable",
+          "Each delivery uses a different promise",
+          "Stabilize the service before documenting it"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA business-management guide",
+        "url": "https://www.sba.gov/counseling/manage-your-business/"
+      },
+      {
+        "label": "SBA emergency-preparation guidance",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/prepare-emergencies"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "renewal-revenue-map-find-the-missing-second-sale",
     "title": "Renewal Revenue Map: Find the Missing Second Sale",
     "seoTitle": "Renewal Revenue Map: Find the Missing Second Sale",
