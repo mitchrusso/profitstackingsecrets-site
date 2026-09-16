@@ -31,6 +31,163 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "cash-timing-vs-profit-a-13-week-decision-view",
+    "title": "Cash Timing vs Profit: A 13-Week Decision View",
+    "seoTitle": "Cash Timing vs Profit: A 13-Week Decision View",
+    "imageAlt": "Original line chart of thirteen fictional weekly cash balances with a labeled low point and later collection; amounts are illustrative and not business forecasts.",
+    "description": "Build a 13-week cash view using collection timing, payment obligations, downside scenarios, and weekly variance review.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/cash-timing-vs-profit-a-13-week-decision-view-original.svg",
+    "publishedAt": "2026-09-16T09:00:00-04:00",
+    "updatedAt": "2026-09-16",
+    "keywords": [
+      "cash flow vs profit",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Build a weekly cash forecast from expected bank movements, then compare it with your profit reporting. A profitable sale can still create a cash shortage if payroll and supplier payments arrive before the customer pays. Use thirteen weeks to expose that timing gap while there is still time to make a decision.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Build a weekly cash forecast from expected bank movements, then compare it with your profit reporting. A profitable sale can still create a cash shortage if payroll and supplier payments arrive before the customer pays. Use thirteen weeks to expose that timing gap while there is still time to make a decision."
+        ]
+      },
+      {
+        "heading": "TL;DR",
+        "body": [
+          "Start with reconciled, available cash. Add receipts in the weeks you realistically expect collection, subtract payments in the weeks they will leave, and carry each closing balance into the next opening balance. Keep restricted funds, uncertain financing, and optimistic sales assumptions visible. A cash forecast supports decisions; it does not replace accounting records or establish taxable income."
+        ]
+      },
+      {
+        "heading": "At a glance",
+        "body": [
+          "The original illustration plots a fictional cash balance across thirteen weeks with a marked low point and a later collection. The values illustrate timing only. They are not a forecast for any real business, an expected return, or a promise that a particular reserve will be sufficient.",
+          "The second week is the pressure point in this four-week excerpt. A later receipt does not pay a bill that must clear earlier. Extend the same arithmetic through week thirteen, but keep assumptions and decisions next to the numbers so the sheet is usable in a weekly conversation."
+        ]
+      },
+      {
+        "heading": "Keep cash and profit questions separate",
+        "body": [
+          "Profit reporting asks about income and expenses under the accounting method used. Cash planning asks when money is available to meet obligations. Under accrual accounting, an invoice may affect revenue before cash is received, while depreciation can affect profit without creating a payment that week. Loan proceeds create cash but are not ordinary sales revenue.",
+          "The SBA’s business-management guidance discusses financial records and accounting methods as part of managing a business. The IRS explanation of accounting periods and methods describes cash and accrual rules for tax purposes. These sources support the distinction; they do not prescribe this particular thirteen-week worksheet or determine your business’s tax treatment.",
+          "Ask your accountant which reports you are comparing and what adjustments explain the difference. Avoid changing accounting methods simply to make the forecast resemble profit. A management cash model can be useful even when the tax books use a different timing convention, provided the purpose of each report is clear."
+        ]
+      },
+      {
+        "heading": "Establish the opening balance carefully",
+        "body": [
+          "Reconcile bank balances to the records and account for payments already initiated but not yet reflected. Identify money that is restricted, held for another purpose, or otherwise unavailable for ordinary operating decisions. Do not treat every account balance as interchangeable working capital.",
+          "Choose a consistent weekly boundary, such as the end of each Friday, and document what it includes. If payroll clears on Thursday and a customer normally pays on Monday, a week-ending total can conceal an intraweek low point. Add a daily view for the immediate period when the margin is tight. Thirteen columns are a planning convenience, not proof that weekly detail is always adequate.",
+          "Keep the original opening balance for the first forecast and a dated copy of subsequent versions. That lets you explain whether a change came from a real bank movement, a corrected error, or an altered assumption. A spreadsheet overwritten without a version history makes those explanations unnecessarily difficult."
+        ]
+      },
+      {
+        "heading": "Put receipts in collection weeks",
+        "body": [
+          "List significant receivables by customer, amount, due date, and expected payment week. Use current collection information rather than assuming that invoice terms describe actual behavior. If a customer has disputed an invoice or has not approved the work, show that uncertainty instead of assigning the receipt to the most convenient week.",
+          "Separate committed receipts from proposed sales. A signed contract can still contain acceptance conditions, cancellation rights, or payment milestones that affect collection. Pipeline opportunities deserve a clearly labeled scenario, not automatic inclusion in the base case. Do not apply a percentage to a large uncertain sale and assume the resulting partial cash will arrive.",
+          "For a fictional example, a $20,000 invoice expected in week three might slip to week five. Model the entire timing change in a downside case and inspect weeks three and four. The practical question is whether obligations can be met during the gap, not whether the average thirteen-week balance still looks comfortable."
+        ]
+      },
+      {
+        "heading": "Schedule payments by actual obligation",
+        "body": [
+          "Map payroll, rent, supplier invoices, taxes, debt service, subscriptions, owner distributions, and planned equipment purchases. Separate principal from interest where needed for comparison with the accounts, while ensuring the cash forecast includes the actual total payment. Ask the responsible adviser about tax due dates and amounts rather than estimating them from a generic percentage in an article.",
+          "Distinguish committed payments from discretionary plans. Mark the owner and decision deadline for any item that could change. “Delay supplier payment” is not a neutral spreadsheet adjustment: it can breach terms, damage supply, or create fees. Contact the counterparty through an authorized person and record any agreed change before treating it as available cash relief.",
+          "Include transaction fees, refunds, chargebacks, and other outflows that can disappear in an overly simplified sales forecast. For deposits and advance payments, consider the obligations they support. Receiving cash early does not mean the whole amount can be spent without regard to future delivery costs or repayment conditions."
+        ]
+      },
+      {
+        "heading": "Build a base case and a downside case",
+        "body": [
+          "The base case should use the assumptions you currently expect, with a source and owner for major numbers. The downside case should stress plausible problems such as slower collections, an essential repair, or reduced sales. Describe the event rather than using an unexplained haircut across every line.",
+          "Compare the lowest available balance, its week, and the actions needed before that point. Do not count an unapproved credit line as cash on hand. If financing is an option, verify availability, conditions, fees, repayment demands, and timing with the provider. This worksheet does not recommend borrowing or establish affordability.",
+          "Choose an operating reserve threshold with your adviser based on obligations, volatility, and access to funds. There is no universal amount that this article can set for every company. A threshold is useful because it triggers an earlier conversation; it should not be presented as a guarantee against distress."
+        ]
+      },
+      {
+        "heading": "Turn the forecast into decisions",
+        "body": [
+          "At each weekly review, replace the completed week with actual cash movements and add a new thirteenth week. Compare expected with actual receipts and payments. Categorize meaningful differences as timing, amount, omission, or classification errors. The distinction tells you whether to improve collections information, spending control, or the model itself.",
+          "Assign one action to each material gap. Examples include confirming invoice acceptance, obtaining an updated supplier schedule, reviewing a discretionary purchase, or meeting the accountant about tax obligations. Give the action an owner and a deadline before the cash pressure occurs. A red cell without a decision owner is only a warning decoration.",
+          "Keep a separate reconciliation to profit reporting so the team understands why a good sales month may coexist with weak cash availability. Review the result alongside unit economics and customer obligations, not in isolation. Avoid cutting a necessary expense solely because it improves one week’s closing balance."
+        ]
+      },
+      {
+        "heading": "Questions owners ask",
+        "body": [
+          "Is thirteen weeks mandatory?.",
+          "No. It is a useful planning horizon for many short-term operating decisions. Seasonal, project-based, or highly volatile businesses may also need daily detail and a longer view. Choose the frequency that reveals the actual risk.",
+          "Should I include sales tax collected?.",
+          "Ask your accountant how to represent amounts held for tax obligations and what is actually available. Do not assume money in the bank is unrestricted operating cash. Keep the corresponding payment timing visible.",
+          "What should I do first?.",
+          "Reconcile opening cash and map the next two payroll dates, major supplier payments, and largest expected receipts. Then expand the view. The ProfitStackingSecrets resource library offers related operating-profit questions, and the calculator supports a separate review of business assumptions."
+        ]
+      },
+      {
+        "heading": "Financial and tax disclaimer",
+        "body": [
+          "This educational worksheet is not individualized accounting, tax, legal, or financing advice. The figures are fictional. Confirm treatment and obligations with qualified advisers. Forecasts depend on assumptions and do not guarantee earnings, liquidity, borrowing approval, or business results."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "At a glance",
+      "columns": [
+        "Illustrative week",
+        "Opening available cash",
+        "Receipts",
+        "Payments",
+        "Closing available cash"
+      ],
+      "rows": [
+        [
+          "Week 1",
+          "$18,000",
+          "$6,000",
+          "$10,000",
+          "$14,000"
+        ],
+        [
+          "Week 2",
+          "$14,000",
+          "$3,000",
+          "$12,000",
+          "$5,000"
+        ],
+        [
+          "Week 3",
+          "$5,000",
+          "$15,000",
+          "$8,000",
+          "$12,000"
+        ],
+        [
+          "Week 4",
+          "$12,000",
+          "$7,000",
+          "$9,000",
+          "$10,000"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA’s business-management guidance",
+        "url": "https://www.sba.gov/counseling/manage-your-business/"
+      },
+      {
+        "label": "IRS explanation of accounting periods and methods",
+        "url": "https://www.irs.gov/publications/p538"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "founder-dependency-audit-which-work-should-become-a-system",
     "title": "Founder Dependency Audit: Which Work Should Become a System?",
     "seoTitle": "Founder Dependency Audit: Which Work Should Become a System?",
