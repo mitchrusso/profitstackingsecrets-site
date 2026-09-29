@@ -1,6 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { FormEvent, useMemo, useState } from "react";
+
+type SubmitState = "idle" | "sending" | "sent" | "error";
 
 const levers = [
   {
@@ -65,6 +67,8 @@ export default function ProfitStackCalculator() {
   const [scores, setScores] = useState<Record<string, number>>(() =>
     Object.fromEntries(levers.map((lever) => [lever.key, 3])),
   );
+  const [submitState, setSubmitState] = useState<SubmitState>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const updateScore = (key: string, value: number) => {
     const score = Math.min(5, Math.max(1, value));
@@ -77,6 +81,33 @@ export default function ProfitStackCalculator() {
     const sorted = [...levers].sort((a, b) => scores[a.key] - scores[b.key]);
     return sorted[0];
   }, [scores]);
+
+  async function handleReportRequest(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setSubmitState("sending");
+    setErrorMessage("");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.set("totalScore", String(total));
+    formData.set("weakestLever", weakest.label);
+    formData.set("scores", JSON.stringify(scores));
+
+    const response = await fetch("/api/calculator-report", {
+      method: "POST",
+      body: formData,
+    });
+    const result = await response.json().catch(() => null);
+
+    if (response.ok) {
+      form.reset();
+      setSubmitState("sent");
+      return;
+    }
+
+    setErrorMessage(result?.error || "We could not request your report. Please try again.");
+    setSubmitState("error");
+  }
 
   return (
     <section className="rounded-lg border border-[#dfe5dc] bg-white p-5 shadow-sm sm:p-8">
@@ -136,6 +167,54 @@ export default function ProfitStackCalculator() {
         <p className="mt-5 rounded-md border border-white/16 bg-white/10 p-4 text-sm font-bold leading-6">
           First area to inspect: <span className="text-[#8ee1bf]">{weakest.label}</span>
         </p>
+        <form onSubmit={handleReportRequest} className="mt-6 rounded-lg border border-white/16 bg-white/10 p-4">
+          <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+          <div>
+            <h3 className="text-xl font-black">Analyze my results.</h3>
+            <p className="mt-2 text-sm font-semibold leading-6 text-[#d9ebe4]">
+              Send your score to the Profit Stacking follow-up list and get the next-step report sequence.
+            </p>
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <label className="block">
+              <span className="text-xs font-black uppercase tracking-[0.12em] text-[#8ee1bf]">First name</span>
+              <input
+                required
+                type="text"
+                name="firstName"
+                autoComplete="given-name"
+                className="mt-2 min-h-12 w-full rounded-md border border-white/20 bg-white px-4 text-base text-[#172424] outline-none transition focus:border-[#8ee1bf] focus:ring-4 focus:ring-[#8ee1bf]/20"
+              />
+            </label>
+            <label className="block">
+              <span className="text-xs font-black uppercase tracking-[0.12em] text-[#8ee1bf]">Email</span>
+              <input
+                required
+                type="email"
+                name="email"
+                autoComplete="email"
+                className="mt-2 min-h-12 w-full rounded-md border border-white/20 bg-white px-4 text-base text-[#172424] outline-none transition focus:border-[#8ee1bf] focus:ring-4 focus:ring-[#8ee1bf]/20"
+              />
+            </label>
+          </div>
+          {submitState === "sent" && (
+            <p className="mt-4 rounded-md border border-[#8ee1bf]/50 bg-[#8ee1bf]/15 px-4 py-3 text-sm font-bold leading-6 text-[#eafff6]">
+              Your report request is in. Watch your inbox for the next Profit Stacking steps.
+            </p>
+          )}
+          {submitState === "error" && (
+            <p className="mt-4 rounded-md border border-[#f4b69f]/60 bg-[#f4b69f]/15 px-4 py-3 text-sm font-bold leading-6 text-[#ffe3d8]">
+              {errorMessage}
+            </p>
+          )}
+          <button
+            type="submit"
+            disabled={submitState === "sending"}
+            className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-md bg-[#28a37d] px-5 py-3 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-[#218865] disabled:cursor-not-allowed disabled:bg-[#6d998b]"
+          >
+            {submitState === "sending" ? "Sending..." : "Analyze My Results, Send Me the Report"}
+          </button>
+        </form>
       </div>
     </section>
   );

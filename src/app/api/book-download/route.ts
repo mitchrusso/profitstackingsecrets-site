@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { enrollTinyEmailSubscriber, splitName } from "@/lib/tinyemail";
 
 export const runtime = "nodejs";
 
@@ -6,12 +7,6 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://profitstackingsecre
 const downloadPath = "/downloads/profit-stacking-secrets-by-mitch-russo.pdf";
 const appUpsellPath = "/profit-stack-builder";
 const genericSendError = "We could not email the guide right now. Please try again in a few minutes.";
-const tinyEmailAccountId = "e4ea2f69-5822-4136-a02b-d0045cabb18f";
-const tinyEmailFormId = "60b78d12-156e-4698-a7e9-4e506738047f";
-const tinyEmailSiteOrigin = process.env.TINYEMAIL_SITE_ORIGIN || "https://mitchrusso.com";
-const tinyEmailFormReferer =
-  process.env.TINYEMAIL_FORM_REFERER || "https://mitchrusso.com/profit-stacking-tinyemail-form-host/";
-const tinyEmailEndpoint = `https://api-form.tinyemail.com/ext/formservice/form-provider/${tinyEmailAccountId}/${tinyEmailFormId}`;
 
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 6;
@@ -69,20 +64,10 @@ export async function POST(request: Request) {
 
   const downloadUrl = new URL(downloadPath, siteUrl).toString();
   const appUpsellUrl = new URL(appUpsellPath, siteUrl).toString();
-  const nameParts = name.split(/\s+/).filter(Boolean);
-  const firstName = nameParts.shift() || name;
-  const lastName = nameParts.join(" ");
+  const { firstName, lastName } = splitName(name);
 
   try {
-    const response = await fetch(tinyEmailEndpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Origin: tinyEmailSiteOrigin,
-        Referer: tinyEmailFormReferer,
-      },
-      body: JSON.stringify({ firstName, lastName, email }),
-    });
+    const response = await enrollTinyEmailSubscriber({ firstName, lastName, email });
 
     if (!response.ok) {
       const responseText = await response.text();

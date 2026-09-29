@@ -12,7 +12,7 @@ const sections = [
   {
     title: "Information We Collect",
     body: [
-      "Profit Stacking Secrets is an informational and affiliate website. We may collect limited information that you voluntarily provide, such as your name, email address, or message if you contact us.",
+      "Profit Stacking Secrets is an informational and affiliate website. We may collect limited information that you voluntarily provide, such as your name, email address, calculator report request, or message if you contact us.",
       "We may also collect technical information automatically, including IP address, browser type, device information, referring pages, pages viewed, approximate location derived from your IP address, and the date and time of your visit.",
     ],
   },
