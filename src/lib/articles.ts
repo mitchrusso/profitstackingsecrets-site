@@ -31,6 +31,187 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "customer-deposit-tracking-without-double-counting-revenue",
+    "title": "Customer Deposit Tracking Without Double Counting Revenue",
+    "seoTitle": "Customer Deposit Tracking Without Double Counting Revenue",
+    "imageAlt": "Customer Deposit Tracking Without Double Counting Revenue topic field map",
+    "description": "Plan finance and profitability with a practical six-step workflow, evidence checks, implementation guidance, cautions, and a reusable review checklist.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/customer-deposit-tracking-without-double-counting-revenue.svg",
+    "publishedAt": "2026-09-30T09:00:00-04:00",
+    "updatedAt": "2026-09-30",
+    "keywords": [
+      "customer deposit tracking",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Treat finance and profitability as a field procedure rather than a collection of tips. The procedure should still work when the day is busy, the easy option is unavailable, or another person takes over. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Treat finance and profitability as a field procedure rather than a collection of tips. The procedure should still work when the day is busy, the easy option is unavailable, or another person takes over. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+          "Use this guide when a concrete customer deposit tracking without double counting revenue decision is already on the table. It focuses on the sequence, evidence, and recovery path—not on claiming that one answer fits every material, person, location, organization, or appetite."
+        ]
+      },
+      {
+        "heading": "At a glance: six checkpoints for finance and profitability",
+        "body": [
+          "1. Define the offer and analysis period. 2. Reconcile collected revenue rather than booked revenue. 3. Attach direct labor and fulfillment cost. 4. Allocate variable selling and payment cost. 5. Calculate contribution dollars and margin. 6. Choose one controlled improvement and review date.",
+          "Read the list once before acting. Mark the checkpoint with the weakest evidence. That is where the plan needs attention; later refinement cannot rescue a decision built on an unresolved early constraint."
+        ]
+      },
+      {
+        "heading": "Define the result and the stop rule",
+        "body": [
+          "Describe the result in observable terms. Include the person, object, or business process affected; the real environment; the acceptable range; and the point at which the work must stop. For finance and profitability, an unacceptable outcome includes missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue.",
+          "Separate hard constraints from preferences. A hard constraint can disqualify the method even when it is faster or cheaper. Write assumptions as assumptions, attach an owner, and give high-consequence unknowns a deadline for resolution."
+        ]
+      },
+      {
+        "heading": "Prepare with evidence that can change the decision",
+        "body": [
+          "Before scheduling the work, assemble collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Ask which single missing fact could reverse the decision. Resolve that item first; lower-impact questions can remain in the test log.",
+          "Set up the workspace and communication path before the demanding step. Define the offer and analysis period; then confirm that reconcile collected revenue rather than booked revenue. Make the stop authority explicit. The person who notices a problem should not need to negotiate permission while the exposure or failure is growing."
+        ]
+      },
+      {
+        "heading": "The complete walkthrough",
+        "body": [
+          "1. Define the offer and analysis period.",
+          "Do not treat “define the offer and analysis period” as a box to tick. Explain what the step protects and what evidence will prove it worked. Capture analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review, then compare the observation with the stated result. Continue only when the evidence supports the next checkpoint.",
+          "Checkpoint: before moving to “reconcile collected revenue rather than booked revenue,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "2. Reconcile collected revenue rather than booked revenue.",
+          "Make “reconcile collected revenue rather than booked revenue” a pass/fail gate. State the acceptable range, then compare it with collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Do not average a failed constraint against convenience. The right response to a conflict is to pause finance and profitability, resolve the source of truth, and document the decision.",
+          "Checkpoint: before moving to “attach direct labor and fulfillment cost,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "3. Attach direct labor and fulfillment cost.",
+          "Close the loop after you attach direct labor and fulfillment cost. Record the actual outcome, including friction and near misses, rather than only marking the task complete. Use that result to revise the next finance and profitability attempt while the details are still fresh.",
+          "Checkpoint: before moving to “allocate variable selling and payment cost,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "4. Allocate variable selling and payment cost.",
+          "Make “allocate variable selling and payment cost” a pass/fail gate. State the acceptable range, then compare it with collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Do not average a failed constraint against convenience. The right response to a conflict is to pause finance and profitability, resolve the source of truth, and document the decision.",
+          "Checkpoint: before moving to “calculate contribution dollars and margin,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "5. Calculate contribution dollars and margin.",
+          "Treat this as the handoff checkpoint: calculate contribution dollars and margin. The person receiving the work should be able to state the result, the remaining risk, and the next review date. If the handoff requires hidden context, the finance and profitability instruction is not finished.",
+          "Checkpoint: before moving to “choose one controlled improvement and review date,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "6. Choose one controlled improvement and review date.",
+          "For this checkpoint, choose one controlled improvement and review date. Observe the real condition rather than the ideal one. A practical record includes analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. If one of those details is unavailable, note the consequence of guessing before continuing.",
+          "Checkpoint: before moving to “schedule the next inspection or review,” write one sentence describing what passed, what did not, and who owns the unresolved item."
+        ]
+      },
+      {
+        "heading": "Run one representative small test",
+        "body": [
+          "Do not launch the whole plan as the experiment. Trial one completed offer cohort or representative month, observe without coaching the result toward success, and stop when missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue is present. A bounded failure is useful evidence.",
+          "Keep the test honest. Do not add help, favorable conditions, or expert intervention that will be absent during normal use. If the difficult case cannot be tested responsibly, escalate it to the qualified person or authority who can evaluate it."
+        ]
+      },
+      {
+        "heading": "Five mistakes that weaken a finance and profitability plan",
+        "body": [
+          "- Choosing a tool, product, setting, contract form, or template before the finance and profitability requirement is defined. - Testing only the easiest condition and assuming the result represents normal finance and profitability use. - Changing several variables together, which hides the cause of success or failure. - Continuing after missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue because time or money has already been invested. - Finishing the visible task without recording analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "When a mistake appears, stabilize first. Protect the person, material, rights, equipment, food, environment, or client experience involved. Return to the first checkpoint contradicted by the evidence, revise one variable, and create a new stop rule before trying again."
+        ]
+      },
+      {
+        "heading": "Safety, permission, and professional boundaries",
+        "body": [
+          "Educational disclaimer: this guide is general business information, not accounting, tax, legal, or investment advice. Use actual records, define allocation assumptions, and have a qualified adviser review material tax or accounting decisions. No pricing, margin, or growth method guarantees revenue or profit.",
+          "Authoritative starting points:",
+          "- SBA financial-management guidance - IRS business expense guidance - FTC advertising guidance",
+          "Confirm that a source applies to the exact model, jurisdiction, land manager, product category, transaction, clinical situation, or activity. Save the access date and pair general guidance with current manufacturer instructions or individualized professional advice when appropriate."
+        ]
+      },
+      {
+        "heading": "Review the result and make it reusable",
+        "body": [
+          "Close the work with a short audit owned by the person responsible for financial reporting and offer delivery. Preserve analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. That record is the starting point for maintenance, training, renewal, or the next controlled test.",
+          "Turn the final note into a short checklist for the next person. Include the six checkpoints, the approved range, a photograph or example where useful, the stop rule, and the escalation contact. A workflow is not delegated until another person can recognize both a good result and a reason to stop."
+        ]
+      },
+      {
+        "heading": "Your next 20 minutes",
+        "body": [
+          "Write the desired result and the unacceptable outcome. Complete checkpoint one using a current source or direct observation. Then prepare one completed offer cohort or representative month. If the critical evidence is missing, use the time to send one precise question instead of improvising.",
+          "The goal of this short session is not to finish finance and profitability. It is to reach the first defensible action with the stop rule already in place."
+        ]
+      },
+      {
+        "heading": "Related practical guides",
+        "body": [
+          "- profit stacking framework - profit calculator - business resource library"
+        ]
+      },
+      {
+        "heading": "FAQ",
+        "body": [
+          "What should be verified first?.",
+          "Verify the fact that could disqualify the entire approach. In this workflow that usually means define the offer and analysis period, followed by a check that you can reconcile collected revenue rather than booked revenue under real conditions.",
+          "How detailed should the written plan be?.",
+          "Detailed enough that another capable person can perform the next checkpoint and recognize missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue. For most situations, one page plus the controlling sources and analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review is more useful than a long narrative.",
+          "When is a small test not appropriate?.",
+          "Skip informal testing when a recall, emergency, legal restriction, clinical concern, structural question, food-safety uncertainty, unknown hazardous material, or manufacturer prohibition requires an authoritative response first.",
+          "What evidence should be saved afterward?.",
+          "Save analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. Add the source date, the person who approved the result, and the date or trigger for the next review.",
+          "What if the first attempt fails?.",
+          "Stop, protect the affected people and property, and preserve the evidence. Identify the earliest failed checkpoint, change one variable, and decide whether a second bounded test or qualified professional review is the responsible next step."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Decision table for the current attempt",
+      "columns": [
+        "Decision point",
+        "Evidence to check",
+        "Continue when",
+        "Stop when"
+      ],
+      "rows": [
+        [
+          "Opening evidence",
+          "collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs",
+          "source, date, and scope are recorded",
+          "a controlling fact is missing"
+        ],
+        [
+          "Small test",
+          "one completed offer cohort or representative month",
+          "the test represents the difficult condition",
+          "missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue"
+        ],
+        [
+          "Owner",
+          "the person responsible for financial reporting and offer delivery",
+          "one person can stop or escalate the work",
+          "ownership is assumed but not named"
+        ],
+        [
+          "Completion record",
+          "analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review",
+          "the next reviewer can repeat the decision",
+          "the result depends on memory"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA financial-management guidance",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+      },
+      {
+        "label": "IRS business expense guidance",
+        "url": "https://www.irs.gov/publications/p535"
+      },
+      {
+        "label": "FTC advertising guidance",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "invoice-dispute-log-separate-billing-errors-from-scope-gaps",
     "title": "Invoice Dispute Log: Separate Billing Errors From Scope Gaps",
     "seoTitle": "Invoice Dispute Log: Separate Billing Errors From Scope Gaps",
