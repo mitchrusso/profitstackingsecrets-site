@@ -48,6 +48,18 @@ assert(articles.includes("references:") && articles.includes("https://www.sba.go
 assert(articles.includes("package-your-offer-before-you-raise-ad-spend"), "Resource articles should include the offer-packaging pillar.");
 assert(articles.includes("when-to-buy-coaching-course-or-software"), "Resource articles should include an implementation-fit decision guide.");
 assert((articles.match(/slug:/g) ?? []).length >= 10, "Resource library should include at least ten substantive articles.");
+const articleTitles = [...articles.matchAll(/^\s+"title": "(.*)",$/gm)].map((match) => match[1]);
+const articleSeoTitles = [...articles.matchAll(/^\s+"seoTitle": "(.*)",$/gm)].map((match) => match[1]);
+const articleDescriptions = [...articles.matchAll(/^\s+"description": "(.*)",$/gm)].map((match) => match[1]);
+const articleImageAlts = [...articles.matchAll(/^\s+"imageAlt": "(.*)",$/gm)].map((match) => match[1]);
+assert(new Set(articleSeoTitles).size === articleSeoTitles.length, "Resource SEO titles should be unique.");
+assert(new Set(articleDescriptions).size === articleDescriptions.length, "Resource descriptions should be unique.");
+for (const value of [...articleTitles, ...articleSeoTitles, ...articleDescriptions, ...articleImageAlts]) {
+  assert(!value.includes("..."), "Resource metadata should not contain literal truncation marks.");
+}
+for (const description of articleDescriptions) {
+  assert(description.length >= 50 && description.length <= 220, "Resource descriptions should be complete and snippet-ready.");
+}
 assert(articlePage.includes('"@type": "Article"') && articlePage.includes("breadcrumbJsonLd"), "Resource article pages should include Article and breadcrumb schema.");
 assert(articlePage.includes('target="_blank"') && articlePage.includes('rel="noopener noreferrer"'), "Article reference links should open safely in a new tab.");
 assert(resourcesPage.includes("resourceArticles.map"), "Resources hub should link to individual articles.");
