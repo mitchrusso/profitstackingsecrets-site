@@ -31,6 +31,368 @@ export type ResourceArticle = {
 
 export const resourceArticles: ResourceArticle[] = [
   {
+    "slug": "cash-timing-check-separate-an-estimate-from-a-confirmed-deposit",
+    "title": "Cash Timing Check: Separate an Estimate From a Confirmed Deposit",
+    "seoTitle": "Cash Timing Check: Separate an Estimate From a Confirmed",
+    "imageAlt": "Cash Timing Check: Separate an Estimate From a Confirmed Deposit topic field map",
+    "description": "Use a practical six-step cash timing check separate an estimate from a confirmed deposit workflow with evidence checks, cautions, and a reusable review checkli.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/cash-timing-check-separate-an-estimate-from-a-confirmed-deposit.svg",
+    "publishedAt": "2026-11-18T09:00:00-05:00",
+    "updatedAt": "2026-11-18",
+    "keywords": [
+      "cash timing check separate an estimate from a confirmed deposit",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "Treat cash timing check: separate an estimate from a confirmed deposit as a field procedure rather than a collection of tips. The procedure should still work when the day is busy, the easy option is unavailable, or another person takes over. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "Treat cash timing check: separate an estimate from a confirmed deposit as a field procedure rather than a collection of tips. The procedure should still work when the day is busy, the easy option is unavailable, or another person takes over. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+          "Use this guide when a concrete cash timing check: separate an estimate from a confirmed deposit decision is already on the table. It focuses on the sequence, evidence, and recovery path—not on claiming that one answer fits every material, person, location, organization, or appetite."
+        ]
+      },
+      {
+        "heading": "At a glance: six checkpoints for cash timing check: separate an estimate from a confirmed deposit",
+        "body": [
+          "1. Define the measurable profit question. 2. Collect source transactions for one period. 3. Separate fixed and variable costs. 4. Include labor and fulfillment burden. 5. Compare contribution dollars and margin. 6. Run one controlled improvement and review it.",
+          "Read the list once before acting. Mark the checkpoint with the weakest evidence. That is where the plan needs attention; later refinement cannot rescue a decision built on an unresolved early constraint."
+        ]
+      },
+      {
+        "heading": "Define the result and the stop rule",
+        "body": [
+          "Describe the result in observable terms. Include the person, object, or business process affected; the real environment; the acceptable range; and the point at which the work must stop. For cash timing check: separate an estimate from a confirmed deposit, an unacceptable outcome includes missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue.",
+          "Separate hard constraints from preferences. A hard constraint can disqualify the method even when it is faster or cheaper. Write assumptions as assumptions, attach an owner, and give high-consequence unknowns a deadline for resolution."
+        ]
+      },
+      {
+        "heading": "Prepare with evidence that can change the decision",
+        "body": [
+          "Before scheduling the work, assemble collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Ask which single missing fact could reverse the decision. Resolve that item first; lower-impact questions can remain in the test log.",
+          "Set up the workspace and communication path before the demanding step. Define the measurable profit question; then confirm that collect source transactions for one period. Make the stop authority explicit. The person who notices a problem should not need to negotiate permission while the exposure or failure is growing."
+        ]
+      },
+      {
+        "heading": "The complete walkthrough",
+        "body": [
+          "1. Define the measurable profit question.",
+          "Assign this action explicitly to the person responsible for financial reporting and offer delivery: define the measurable profit question. Give that person authority to stop the sequence when missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue appears. Clear ownership prevents a common failure in cash timing check: separate an estimate from a confirmed deposit: everyone sees the concern, but each person assumes someone else will make the decision.",
+          "Gate check: before moving to “collect source transactions for one period,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "2. Collect source transactions for one period.",
+          "Start by turning “collect source transactions for one period” into a fact someone can verify. Use collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Record the source date with the conclusion so a later reviewer can separate verified facts from recollection. For cash timing check: separate an estimate from a confirmed deposit, this checkpoint is complete only when the next operator knows what is confirmed and what remains unknown.",
+          "Gate check: before moving to “separate fixed and variable costs,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "3. Separate fixed and variable costs.",
+          "Do not treat “separate fixed and variable costs” as a box to tick. Explain what the step protects and what evidence will prove it worked. Capture analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review, then compare the observation with the stated result. Continue only when the evidence supports the next checkpoint.",
+          "Gate check: before moving to “include labor and fulfillment burden,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "4. Include labor and fulfillment burden.",
+          "Treat this as the handoff checkpoint: include labor and fulfillment burden. The person receiving the work should be able to state the result, the remaining risk, and the next review date. If the handoff requires hidden context, the cash timing check: separate an estimate from a confirmed deposit instruction is not finished.",
+          "Gate check: before moving to “compare contribution dollars and margin,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "5. Compare contribution dollars and margin.",
+          "Start by turning “compare contribution dollars and margin” into a fact someone can verify. Use collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Record the source date with the conclusion so a later reviewer can separate verified facts from recollection. For cash timing check: separate an estimate from a confirmed deposit, this checkpoint is complete only when the next operator knows what is confirmed and what remains unknown.",
+          "Gate check: before moving to “run one controlled improvement and review it,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "6. Run one controlled improvement and review it.",
+          "Practice this step on one completed offer cohort or representative month: run one controlled improvement and review it. Change one variable, keep the other conditions stable, and inspect the result before expanding the scope. Keep the trial representative of the hardest normal condition; an easy demonstration does not validate the full workflow.",
+          "Gate check: before moving to “schedule the next inspection or review,” write one sentence describing what passed, what did not, and who owns the unresolved item."
+        ]
+      },
+      {
+        "heading": "Run one representative small test",
+        "body": [
+          "Do not launch the whole plan as the experiment. Trial one completed offer cohort or representative month, observe without coaching the result toward success, and stop when missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue is present. A bounded failure is useful evidence.",
+          "Keep the test honest. Do not add help, favorable conditions, or expert intervention that will be absent during normal use. If the difficult case cannot be tested responsibly, escalate it to the qualified person or authority who can evaluate it."
+        ]
+      },
+      {
+        "heading": "Five mistakes that weaken a cash timing check: separate an estimate from a confirmed deposit plan",
+        "body": [
+          "- Choosing a tool, product, setting, contract form, or template before the cash timing check: separate an estimate from a confirmed deposit requirement is defined. - Testing only the easiest condition and assuming the result represents normal cash timing check: separate an estimate from a confirmed deposit use. - Changing several variables together, which hides the cause of success or failure. - Continuing after missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue because time or money has already been invested. - Finishing the visible task without recording analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "When a mistake appears, stabilize first. Protect the person, material, rights, equipment, food, environment, or client experience involved. Return to the first checkpoint contradicted by the evidence, revise one variable, and create a new stop rule before trying again."
+        ]
+      },
+      {
+        "heading": "Safety, permission, and professional boundaries",
+        "body": [
+          "Educational disclaimer: this guide is general business information, not accounting, tax, legal, or investment advice. Use actual records, define allocation assumptions, and have a qualified adviser review material tax or accounting decisions. No pricing, margin, or growth method guarantees revenue or profit.",
+          "Authoritative starting points:",
+          "- SBA financial-management guidance - IRS business expense guidance - FTC advertising guidance",
+          "Confirm that a source applies to the exact model, jurisdiction, land manager, product category, transaction, clinical situation, or activity. Save the access date and pair general guidance with current manufacturer instructions or individualized professional advice when appropriate."
+        ]
+      },
+      {
+        "heading": "Review the result and make it reusable",
+        "body": [
+          "Close the work with a short audit owned by the person responsible for financial reporting and offer delivery. Preserve analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. That record is the starting point for maintenance, training, renewal, or the next controlled test.",
+          "Turn the final note into a short checklist for the next person. Include the six checkpoints, the approved range, a photograph or example where useful, the stop rule, and the escalation contact. A workflow is not delegated until another person can recognize both a good result and a reason to stop."
+        ]
+      },
+      {
+        "heading": "Your next 20 minutes",
+        "body": [
+          "Write the desired result and the unacceptable outcome. Complete checkpoint one using a current source or direct observation. Then prepare one completed offer cohort or representative month. If the critical evidence is missing, use the time to send one precise question instead of improvising.",
+          "The goal of this short session is not to finish cash timing check: separate an estimate from a confirmed deposit. It is to reach the first defensible action with the stop rule already in place."
+        ]
+      },
+      {
+        "heading": "Related practical guides",
+        "body": [
+          "- profit stacking framework - profit calculator - business resource library"
+        ]
+      },
+      {
+        "heading": "FAQ",
+        "body": [
+          "What should be verified first?.",
+          "Verify the fact that could disqualify the entire approach. In this workflow that usually means define the measurable profit question, followed by a check that you can collect source transactions for one period under real conditions.",
+          "How detailed should the written plan be?.",
+          "Detailed enough that another capable person can perform the next checkpoint and recognize missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue. For most situations, one page plus the controlling sources and analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review is more useful than a long narrative.",
+          "When is a small test not appropriate?.",
+          "Skip informal testing when a recall, emergency, legal restriction, clinical concern, structural question, food-safety uncertainty, unknown hazardous material, or manufacturer prohibition requires an authoritative response first.",
+          "What evidence should be saved afterward?.",
+          "Save analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. Add the source date, the person who approved the result, and the date or trigger for the next review.",
+          "What if the first attempt fails?.",
+          "Stop, protect the affected people and property, and preserve the evidence. Identify the earliest failed checkpoint, change one variable, and decide whether a second bounded test or qualified professional review is the responsible next step."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Decision table for the current attempt",
+      "columns": [
+        "Decision point",
+        "Evidence to check",
+        "Continue when",
+        "Stop when"
+      ],
+      "rows": [
+        [
+          "Opening evidence",
+          "collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs",
+          "source, date, and scope are recorded",
+          "a controlling fact is missing"
+        ],
+        [
+          "Small test",
+          "one completed offer cohort or representative month",
+          "the test represents the difficult condition",
+          "missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue"
+        ],
+        [
+          "Owner",
+          "the person responsible for financial reporting and offer delivery",
+          "one person can stop or escalate the work",
+          "ownership is assumed but not named"
+        ],
+        [
+          "Completion record",
+          "analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review",
+          "the next reviewer can repeat the decision",
+          "the result depends on memory"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA financial-management guidance",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+      },
+      {
+        "label": "IRS business expense guidance",
+        "url": "https://www.irs.gov/publications/p535"
+      },
+      {
+        "label": "FTC advertising guidance",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
+    "slug": "vendor-bill-review-match-the-service-record-before-payment",
+    "title": "Vendor Bill Review: Match the Service Record Before Payment",
+    "seoTitle": "Vendor Bill Review: Match the Service Record Before Payment",
+    "imageAlt": "Vendor Bill Review: Match the Service Record Before Payment topic field map",
+    "description": "Use a practical six-step vendor bill review workflow with evidence checks, cautions, and a reusable review checklist.",
+    "categorySlug": "finance-and-profitability",
+    "image": "/images/vendor-bill-review-match-the-service-record-before-payment.svg",
+    "publishedAt": "2026-11-17T09:00:00-05:00",
+    "updatedAt": "2026-11-17",
+    "keywords": [
+      "vendor bill review",
+      "offer profitability",
+      "contribution margin"
+    ],
+    "summary": "The difficult part of cash planning is rarely knowing that action is required. It is deciding what to verify first, what to test, and what evidence is strong enough to continue. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+    "sections": [
+      {
+        "heading": "Start here",
+        "body": [
+          "The difficult part of cash planning is rarely knowing that action is required. It is deciding what to verify first, what to test, and what evidence is strong enough to continue. Profit improves when each offer is measured as an economic unit instead of being judged by revenue alone.",
+          "Use this guide when a concrete vendor bill review: match the service record before payment decision is already on the table. It focuses on the sequence, evidence, and recovery path—not on claiming that one answer fits every material, person, location, organization, or appetite."
+        ]
+      },
+      {
+        "heading": "At a glance: six checkpoints for cash planning",
+        "body": [
+          "1. Define the measurable profit question. 2. Collect source transactions for one period. 3. Separate fixed and variable costs. 4. Include labor and fulfillment burden. 5. Compare contribution dollars and margin. 6. Run one controlled improvement and review it.",
+          "Read the list once before acting. Mark the checkpoint with the weakest evidence. That is where the plan needs attention; later refinement cannot rescue a decision built on an unresolved early constraint."
+        ]
+      },
+      {
+        "heading": "Define the result and the stop rule",
+        "body": [
+          "Describe the result in observable terms. Include the person, object, or business process affected; the real environment; the acceptable range; and the point at which the work must stop. For cash planning, an unacceptable outcome includes missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue.",
+          "Separate hard constraints from preferences. A hard constraint can disqualify the method even when it is faster or cheaper. Write assumptions as assumptions, attach an owner, and give high-consequence unknowns a deadline for resolution."
+        ]
+      },
+      {
+        "heading": "Prepare with evidence that can change the decision",
+        "body": [
+          "Walk through the actual setting and gather collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Do not substitute a product page, generic summary, or remembered dimension for something you can observe directly. Photograph or note the condition that is easiest to misremember.",
+          "Set up the workspace and communication path before the demanding step. Define the measurable profit question; then confirm that collect source transactions for one period. Make the stop authority explicit. The person who notices a problem should not need to negotiate permission while the exposure or failure is growing."
+        ]
+      },
+      {
+        "heading": "The complete walkthrough",
+        "body": [
+          "1. Define the measurable profit question.",
+          "Start by turning “define the measurable profit question” into a fact someone can verify. Use collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. Record the source date with the conclusion so a later reviewer can separate verified facts from recollection. For cash planning, this checkpoint is complete only when the next operator knows what is confirmed and what remains unknown.",
+          "Gate check: before moving to “collect source transactions for one period,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "2. Collect source transactions for one period.",
+          "Document the starting condition before you collect source transactions for one period. Without a baseline, the team may notice change but cannot judge whether it is acceptable. The baseline for cash planning should be brief, observable, and saved with analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "Gate check: before moving to “separate fixed and variable costs,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "3. Separate fixed and variable costs.",
+          "For this checkpoint, separate fixed and variable costs. Observe the real condition rather than the ideal one. A practical record includes analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. If one of those details is unavailable, note the consequence of guessing before continuing.",
+          "Gate check: before moving to “include labor and fulfillment burden,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "4. Include labor and fulfillment burden.",
+          "Do not treat “include labor and fulfillment burden” as a box to tick. Explain what the step protects and what evidence will prove it worked. Capture analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review, then compare the observation with the stated result. Continue only when the evidence supports the next checkpoint.",
+          "Gate check: before moving to “compare contribution dollars and margin,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "5. Compare contribution dollars and margin.",
+          "Ask what would make this action wrong in the present setting, then compare contribution dollars and margin. Compare the answer with collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs. This counter-check is especially valuable when a familiar method is being reused with a different person, product, location, or workload.",
+          "Gate check: before moving to “run one controlled improvement and review it,” write one sentence describing what passed, what did not, and who owns the unresolved item.",
+          "6. Run one controlled improvement and review it.",
+          "Document the starting condition before you run one controlled improvement and review it. Without a baseline, the team may notice change but cannot judge whether it is acceptable. The baseline for cash planning should be brief, observable, and saved with analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "Gate check: before moving to “schedule the next inspection or review,” write one sentence describing what passed, what did not, and who owns the unresolved item."
+        ]
+      },
+      {
+        "heading": "Run one representative small test",
+        "body": [
+          "The first implementation should be one completed offer cohort or representative month. Make it realistic enough to expose the hard condition but limited enough to reverse. Record analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review so the result can guide the next attempt.",
+          "Keep the test honest. Do not add help, favorable conditions, or expert intervention that will be absent during normal use. If the difficult case cannot be tested responsibly, escalate it to the qualified person or authority who can evaluate it."
+        ]
+      },
+      {
+        "heading": "Five mistakes that weaken a cash planning plan",
+        "body": [
+          "- Choosing a tool, product, setting, contract form, or template before the cash planning requirement is defined. - Testing only the easiest condition and assuming the result represents normal cash planning use. - Changing several variables together, which hides the cause of success or failure. - Continuing after missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue because time or money has already been invested. - Finishing the visible task without recording analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review.",
+          "When a mistake appears, stabilize first. Protect the person, material, rights, equipment, food, environment, or client experience involved. Return to the first checkpoint contradicted by the evidence, revise one variable, and create a new stop rule before trying again."
+        ]
+      },
+      {
+        "heading": "Safety, permission, and professional boundaries",
+        "body": [
+          "Educational disclaimer: this guide is general business information, not accounting, tax, legal, or investment advice. Use actual records, define allocation assumptions, and have a qualified adviser review material tax or accounting decisions. No pricing, margin, or growth method guarantees revenue or profit.",
+          "Authoritative starting points:",
+          "- SBA financial-management guidance - IRS business expense guidance - FTC advertising guidance",
+          "Confirm that a source applies to the exact model, jurisdiction, land manager, product category, transaction, clinical situation, or activity. Save the access date and pair general guidance with current manufacturer instructions or individualized professional advice when appropriate."
+        ]
+      },
+      {
+        "heading": "Review the result and make it reusable",
+        "body": [
+          "At the review, ask three questions: What changed? What remained uncertain? Did missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue occur or nearly occur? Assign one owner and date to every follow-up.",
+          "Turn the final note into a short checklist for the next person. Include the six checkpoints, the approved range, a photograph or example where useful, the stop rule, and the escalation contact. A workflow is not delegated until another person can recognize both a good result and a reason to stop."
+        ]
+      },
+      {
+        "heading": "Your next 20 minutes",
+        "body": [
+          "Write the desired result and the unacceptable outcome. Complete checkpoint one using a current source or direct observation. Then prepare one completed offer cohort or representative month. If the critical evidence is missing, use the time to send one precise question instead of improvising.",
+          "The goal of this short session is not to finish cash planning. It is to reach the first defensible action with the stop rule already in place."
+        ]
+      },
+      {
+        "heading": "Related practical guides",
+        "body": [
+          "- profit stacking framework - profit calculator - business resource library"
+        ]
+      },
+      {
+        "heading": "FAQ",
+        "body": [
+          "What should be verified first?.",
+          "Verify the fact that could disqualify the entire approach. In this workflow that usually means define the measurable profit question, followed by a check that you can collect source transactions for one period under real conditions.",
+          "How detailed should the written plan be?.",
+          "Detailed enough that another capable person can perform the next checkpoint and recognize missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue. For most situations, one page plus the controlling sources and analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review is more useful than a long narrative.",
+          "When is a small test not appropriate?.",
+          "Skip informal testing when a recall, emergency, legal restriction, clinical concern, structural question, food-safety uncertainty, unknown hazardous material, or manufacturer prohibition requires an authoritative response first.",
+          "What evidence should be saved afterward?.",
+          "Save analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review. Add the source date, the person who approved the result, and the date or trigger for the next review.",
+          "What if the first attempt fails?.",
+          "Stop, protect the affected people and property, and preserve the evidence. Identify the earliest failed checkpoint, change one variable, and decide whether a second bounded test or qualified professional review is the responsible next step."
+        ]
+      }
+    ],
+    "table": {
+      "caption": "Decision table for the current attempt",
+      "columns": [
+        "Decision point",
+        "Evidence to check",
+        "Continue when",
+        "Stop when"
+      ],
+      "rows": [
+        [
+          "Opening evidence",
+          "collected revenue, refunds, delivery hours, labor rates, contractor invoices, merchant fees, commissions, and offer-specific software costs",
+          "source, date, and scope are recorded",
+          "a controlling fact is missing"
+        ],
+        [
+          "Small test",
+          "one completed offer cohort or representative month",
+          "the test represents the difficult condition",
+          "missing transaction data, hidden founder labor, inconsistent cost allocation, or a margin conclusion based only on booked revenue"
+        ],
+        [
+          "Owner",
+          "the person responsible for financial reporting and offer delivery",
+          "one person can stop or escalate the work",
+          "ownership is assumed but not named"
+        ],
+        [
+          "Completion record",
+          "analysis period, units sold, cash collected, refunds, direct labor, variable costs, contribution dollars, margin percentage, and next review",
+          "the next reviewer can repeat the decision",
+          "the result depends on memory"
+        ]
+      ]
+    },
+    "references": [
+      {
+        "label": "SBA financial-management guidance",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances"
+      },
+      {
+        "label": "IRS business expense guidance",
+        "url": "https://www.irs.gov/publications/p535"
+      },
+      {
+        "label": "FTC advertising guidance",
+        "url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+      }
+    ],
+    "cta": {
+      "label": "Run the Profit Stack Calculator",
+      "href": "/calculator"
+    }
+  },
+  {
     "slug": "cash-reserve-review-separate-operating-commitments-from-optional-spending",
     "title": "Cash Reserve Review: Separate Operating Commitments From Optional Spending",
     "seoTitle": "Cash Reserve Review: Separate Operating Commitments From",
